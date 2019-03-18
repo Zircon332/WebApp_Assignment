@@ -1,12 +1,23 @@
 /* StyleSheet for HTML */
 
 
-/* =============== MAIN =============== */
+/* ############### MAIN ############### */
+/* css for elements found in all pages */
+
 
 body {
   background-color: black;
   margin: 0 5%;
 }
+
+header {
+  background-color: darkgrey;
+}
+
+footer {
+  background-color: darkgrey;
+}
+
 
 h1, h2, h3, h4, h5, h6 {
   color: white;
@@ -30,7 +41,8 @@ a:visited {
 
 
 
-/* =============== INDEX =============== */
+/* ############### INDEX ############### */
+/* css in index.html specifically */
 
 
 
@@ -41,16 +53,19 @@ a:visited {
 
 
 
-
-/* =============== PRODUCT =============== */
-
-
+/* ############### PRODUCT ############### */
+/* css in product.html specifically */
 
 
-/* ============== DISCLAIMER ============== */
 
 
-/* =============== ENQUIRY =============== */
+/* ############## DISCLAIMER ############## */
+/* css in disclaimer.html specifically */
 
 
-/* =============== ABOUTME =============== */
+/* ############### ENQUIRY ############### */
+/* css in enquiry.html specifically */
+
+
+/* ############### ABOUTME ############### */
+/* css in aboutme.html specifically */
