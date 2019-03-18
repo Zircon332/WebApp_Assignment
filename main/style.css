@@ -1,0 +1,56 @@
+/* StyleSheet for HTML */
+
+
+/* =============== MAIN =============== */
+
+body {
+  background-color: black;
+  margin: 0 5%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: white;
+}
+
+a {
+  color: red;
+}
+
+a:active {
+  text-decoration: underline;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:visited {
+  color: grey;
+}
+
+
+
+/* =============== INDEX =============== */
+
+
+
+
+
+
+
+
+
+
+
+/* =============== PRODUCT =============== */
+
+
+
+
+/* ============== DISCLAIMER ============== */
+
+
+/* =============== ENQUIRY =============== */
+
+
+/* =============== ABOUTME =============== */
