@@ -20,6 +20,12 @@ header {
 
 footer {
   background-color: darkgrey;
+  color: black;
+}
+
+hr {
+  border: none;
+  border-bottom: 1px solid white;
 }
 
 
@@ -30,19 +36,37 @@ h1, h2, h3, h4, h5, h6, p {
 
 a {
   color: red;
+  text-decoration: none;
+  transition: .05s;
 }
 
-a:active {
+a:hover, a:active {
   text-decoration: underline;
-}
-
-a:hover {
-  text-decoration: underline;
+  font-size: 1.1em;
+  transition: .1s;
 }
 
 a:visited {
   color: lightgrey;
 }
+
+nav {
+  width: 50%;
+  margin: auto;
+  display: block;
+  text-align: center;
+}
+
+li {
+  list-style-type: none;
+  display: inline-block;
+  font-size: 1.5em;
+  margin: 1.5% 5% 1.5% 0;
+}
+
+
+
+
 
 
 
