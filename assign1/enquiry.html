@@ -31,42 +31,59 @@
           <form id="enquiry_form" enctype="text/plain" method="post" action="process.php">
 
             <p><label for="fname">First name: </label>
-              <input type="text" id="fname" name="fname" placeholder="First Name" required="Required" maxlength="25" size="25" pattern="^[a-zA-Z]+$"/>
+              <input type="text" id="fname" name="fname" required="Required" maxlength="25" size="25" pattern="^[a-zA-Z]+$"/>
             </p>
 
             <p><label for="lname">Last name: </label>
-              <input type="text" id="lname" name="lname" placeholder="Last Name" required="Required" maxlength="25" size="25" pattern="^[a-zA-Z]+$"/>
+              <input type="text" id="lname" name="lname" required="Required" maxlength="25" size="25" pattern="^[a-zA-Z]+$"/>
             </p>
 
             <p><label for="email">Email address: </label>
-              <input type="email" id="email" name="email" placeholder="Email address" required="Required" size="22"/>
+              <input type="email" id="email" name="email" required="Required" size="22"/>
             </p>
 
             <fieldset>
               <legend>Address: </legend>
               <p><label for="street">Street address: </label>
-                <input type="text" id="street" name="street" placeholder="Street Address" required="Required" maxlength="40" size="22"/>
+                <input type="text" id="street" name="street" required="Required" maxlength="40" size="22"/>
               </p>
 
               <p><label for="city">City/town: </label>
-                <input type="text" id="city" name="city" placeholder="City/town" required="Required" maxlength="20" size="22"/>
+                <input type="text" id="city" name="city" required="Required" maxlength="20" size="22"/>
               </p>
 
               <p><label for="state">State: </label>
                 <select id="state" name="state" required="Required">
-                  <option value="sarawak" selected="selected">Sarawak</option>
-                  <option value="sabah">Sabah</option>
-                  <option value="west">West Malaysia</option>
+                  <optgroup label="States">
+                    <option value="johor" selected="selected">Johor</option>
+                    <option value="kedah">Kedah</option>
+                    <option value="kelantan">Kelantan</option>
+                    <option value="malacca">Malacca</option>
+                    <option value="negeri_sembilan">Negeri Sembilan</option>
+                    <option value="pahang">Pahang</option>
+                    <option value="penang">Penang</option>
+                    <option value="perak">Perak</option>
+                    <option value="perlis">Perlis</option>
+                    <option value="sabah">Sabah</option>
+                    <option value="sarawak">Sarawak</option>
+                    <option value="selanggor">Selanggor</option>
+                    <option value="terengganu">Terengganu</option>
+                  </optgroup>
+                  <optgroup label="Federal Territories">
+                    <option value="kuala_lumpur">Kuala Lumpur</option>
+                    <option value="labuan">Labuan</option>
+                    <option value="putrajaya">Putrajaya</option>
+                  </optgroup>
                 </select>
               </p>
 
-              <p><label for="address">Postcode: </label>
-                <input type="number" id="postcode" name="postcode" placeholder="Postcode" required="Required" min="10000" maxlength="5" size="5"/>
+              <p><label for="postcode">Postcode: </label>
+                <input type="text" id="postcode" name="postcode" required="Required" pattern="[0-9]{5}" maxlength="5" size="5" required="Required"/>
               </p>
             </fieldset>
 
-            <p><label for="address">Phone Number: </label>
-              <input type="tel" id="phone" name="phone" placeholder="XXXXXXXXXX" required="Required" maxlength="10" size="10"/>
+            <p><label for="phone">Phone Number: </label>
+              <input type="tel" id="phone" name="phone" placeholder="XXXXXXXXXX" required="Required" maxlength="10" size="15"/>
             </p>
 
             <p><label for="product">Product: </label>
@@ -98,11 +115,11 @@
               </select>
             </p>
 
-            <p><label for="duration">Rental duration: </label>
-              <input type="number" id="duration" name="duration" placeholder="Rental duration" required="Required" size="10"/>
+            <p><label for="number">Rental duration: </label>
+              <input type="number" id="duration" name="duration" required="Required" size="10"/>
             </p>
 
-            <p><label for="duration">Comment: </label><br/>
+            <p><label for="comments">Comment: </label><br/>
               <textarea name="comments" rows="4" cols="50">Enter comments here. (Not required)</textarea>
             </p>
 
