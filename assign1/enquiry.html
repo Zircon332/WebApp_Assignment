@@ -28,103 +28,119 @@
             </ul>
         </nav>
         <article>
+          <div class="form_header">
+            <h2>ENQUIRY</h2>
+          </div>
           <form id="enquiry_form" enctype="text/plain" method="post" action="process.php">
+            <table>
+              <tr>
+                <td><label for="fname">First name: </label></td>
+                <td><input type="text" id="fname" name="fname" required="Required" maxlength="25" size="25" pattern="^[a-zA-Z]+$"/></td>
+              </tr>
+              <tr>
+                <td><label for="lname">Last name: </label></td>
+                <td><input type="text" id="lname" name="lname" required="Required" maxlength="25" size="25" pattern="^[a-zA-Z]+$"/></td>
+              </tr>
+              <tr>
+              <td><label for="email">Email address: </label></td>
+              <td><input type="email" id="email" name="email" required="Required" size="22"/></td>
+              </tr>
 
-            <p><label for="fname">First name: </label>
-              <input type="text" id="fname" name="fname" required="Required" maxlength="25" size="25" pattern="^[a-zA-Z]+$"/>
-            </p>
-
-            <p><label for="lname">Last name: </label>
-              <input type="text" id="lname" name="lname" required="Required" maxlength="25" size="25" pattern="^[a-zA-Z]+$"/>
-            </p>
-
-            <p><label for="email">Email address: </label>
-              <input type="email" id="email" name="email" required="Required" size="22"/>
-            </p>
+            </table>
 
             <fieldset>
               <legend>Address: </legend>
-              <p><label for="street">Street address: </label>
-                <input type="text" id="street" name="street" required="Required" maxlength="40" size="22"/>
-              </p>
-
-              <p><label for="city">City/town: </label>
-                <input type="text" id="city" name="city" required="Required" maxlength="20" size="22"/>
-              </p>
-
-              <p><label for="state">State: </label>
-                <select id="state" name="state" required="Required">
-                  <optgroup label="States">
-                    <option value="johor" selected="selected">Johor</option>
-                    <option value="kedah">Kedah</option>
-                    <option value="kelantan">Kelantan</option>
-                    <option value="malacca">Malacca</option>
-                    <option value="negeri_sembilan">Negeri Sembilan</option>
-                    <option value="pahang">Pahang</option>
-                    <option value="penang">Penang</option>
-                    <option value="perak">Perak</option>
-                    <option value="perlis">Perlis</option>
-                    <option value="sabah">Sabah</option>
-                    <option value="sarawak">Sarawak</option>
-                    <option value="selanggor">Selanggor</option>
-                    <option value="terengganu">Terengganu</option>
-                  </optgroup>
-                  <optgroup label="Federal Territories">
-                    <option value="kuala_lumpur">Kuala Lumpur</option>
-                    <option value="labuan">Labuan</option>
-                    <option value="putrajaya">Putrajaya</option>
-                  </optgroup>
-                </select>
-              </p>
-
-              <p><label for="postcode">Postcode: </label>
-                <input type="text" id="postcode" name="postcode" required="Required" pattern="[0-9]{5}" maxlength="5" size="5" required="Required"/>
-              </p>
+              <table>
+                <tr>
+                  <td><label for="street">Street address: </label></td>
+                  <td><input type="text" id="street" name="street" required="Required" maxlength="40" size="22"/></td>
+                </tr>
+                <tr>
+                <td><label for="city">City/town: </label></td>
+                <td><input type="text" id="city" name="city" required="Required" maxlength="20" size="22"/></td>
+                </tr>
+                <tr>
+                  <td><label for="state">State: </label></td>
+                  <td><select id="state" name="state" required="Required">
+                      <optgroup label="States">
+                        <option value="johor" selected="selected">Johor</option>
+                        <option value="kedah">Kedah</option>
+                        <option value="kelantan">Kelantan</option>
+                        <option value="malacca">Malacca</option>
+                        <option value="negeri_sembilan">Negeri Sembilan</option>
+                        <option value="pahang">Pahang</option>
+                        <option value="penang">Penang</option>
+                        <option value="perak">Perak</option>
+                        <option value="perlis">Perlis</option>
+                        <option value="sabah">Sabah</option>
+                        <option value="sarawak">Sarawak</option>
+                        <option value="selanggor">Selanggor</option>
+                        <option value="terengganu">Terengganu</option>
+                      </optgroup>
+                      <optgroup label="Federal Territories">
+                        <option value="kuala_lumpur">Kuala Lumpur</option>
+                        <option value="labuan">Labuan</option>
+                        <option value="putrajaya">Putrajaya</option>
+                      </optgroup>
+                    </select>
+                  </td>
+                </tr>
+                <tr>
+                  <td><label for="postcode">Postcode: </label></td>
+                  <td><input type="text" id="postcode" name="postcode" required="Required" pattern="[0-9]{5}" maxlength="5" size="5" required="Required"/></td>
+                </tr>
+              </table>
             </fieldset>
 
-            <p><label for="phone">Phone Number: </label>
-              <input type="tel" id="phone" name="phone" placeholder="XXXXXXXXXX" required="Required" maxlength="10" size="15"/>
-            </p>
-
-            <p><label for="product">Product: </label>
-              <select id="product" name="product" required="Required">
-                <optgroup label="Guitar">
-                  <option value="guitar" selected="selected">Guitar</option>
-                  <option value="drum">Drum</option>
-                  <option value="piano">Piano</option>
-                  <option value="violin">Violin</option>
-                </optgroup>
-                <optgroup label="Drum">
-                  <option value="guitar" selected="selected">Guitar</option>
-                  <option value="drum">Drum</option>
-                  <option value="piano">Piano</option>
-                  <option value="violin">Violin</option>
-                </optgroup>
-                <optgroup label="Piano">
-                  <option value="guitar" selected="selected">Guitar</option>
-                  <option value="drum">Drum</option>
-                  <option value="piano">Piano</option>
-                  <option value="violin">Violin</option>
-                </optgroup>
-                <optgroup label="Violin">
-                  <option value="guitar" selected="selected">Guitar</option>
-                  <option value="drum">Drum</option>
-                  <option value="piano">Piano</option>
-                  <option value="violin">Violin</option>
-                </optgroup>
-              </select>
-            </p>
-
-            <p><label for="number">Rental duration: </label>
-              <input type="number" id="duration" name="duration" required="Required" size="10"/>
-            </p>
+            <table>
+              <tr>
+                <td><label for="phone">Phone Number: </label></td>
+                <td><input type="tel" id="phone" name="phone" placeholder="XXXXXXXXXX" required="Required" maxlength="10" size="15"/></td>
+              </tr>
+              <tr>
+                <td><label for="product">Product: </label></td>
+                <td><select id="product" name="product" required="Required">
+                    <optgroup label="Guitar">
+                      <option value="guitar" selected="selected">Guitar</option>
+                      <option value="drum">Drum</option>
+                      <option value="piano">Piano</option>
+                      <option value="violin">Violin</option>
+                    </optgroup>
+                    <optgroup label="Drum">
+                      <option value="guitar" selected="selected">Guitar</option>
+                      <option value="drum">Drum</option>
+                      <option value="piano">Piano</option>
+                      <option value="violin">Violin</option>
+                    </optgroup>
+                    <optgroup label="Piano">
+                      <option value="guitar" selected="selected">Guitar</option>
+                      <option value="drum">Drum</option>
+                      <option value="piano">Piano</option>
+                      <option value="violin">Violin</option>
+                    </optgroup>
+                    <optgroup label="Violin">
+                      <option value="guitar" selected="selected">Guitar</option>
+                      <option value="drum">Drum</option>
+                      <option value="piano">Piano</option>
+                      <option value="violin">Violin</option>
+                    </optgroup>
+                  </select>
+                </td>
+              </tr>
+              <tr>
+                <td><label for="number">Rental duration: </label></td>
+                <td><input type="number" id="duration" name="duration" required="Required" size="10"/></td>
+              </tr>
+            </table>
 
             <p><label for="comments">Comment: </label><br/>
               <textarea name="comments" rows="4" cols="50">Enter comments here. (Not required)</textarea>
             </p>
 
-            <input type="Reset" value="Reset"/>
-            <input type="Submit" value="Submit"/>
+            <div class="form_button">
+              <input type="Reset" value="Reset"/>
+              <input type="Submit" value="Submit"/>
+            </div>
           </form>
         </article>
         <hr/>

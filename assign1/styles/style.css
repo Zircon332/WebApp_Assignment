@@ -4,14 +4,18 @@
 /* ############### MAIN ############### */
 /* css for elements found in all pages */
 
+* {
+  font-family: Helvetica;
+  color: white;
+}
+
 
 body {
   margin: 0;
   padding: 0;
   background-color: #1e1e1e;
-  font-family: Helvetica;
-}
 
+}
 
 
 header {
@@ -96,6 +100,83 @@ li {
 /* ############### ENQUIRY ############### */
 /* css in enquiry.html specifically */
 
+.form_header {
+  text-align: center;
+  background-color: #00BFFF;
+  margin: 0 5%;
+}
+
+form {
+  margin: 0 10%;
+}
+
+fieldset {
+  border-radius: 1em;
+  border: 1px solid #00BFFF;
+  margin: 1% 0;
+}
+
+form legend {
+  text-align: center;
+}
+
+form label {
+  margin-left: 1em;
+}
+
+input[type=text], input[type=email], input[type=number], input[type=tel] {
+  border: none;
+  border-bottom: 2px solid #00BFFF;
+  background-color: transparent;
+  padding: .5em;
+}
+
+input[type=text]:hover, input[type=email]:hover, input[type=number]:hover, input[type=tel]:hover {
+  border-bottom: 2px solid #44DFFF;
+  transition: .5s;
+}
+
+select {
+  border: none;
+  border-bottom: 2px solid #00BFFF;
+  background-color: transparent;
+  padding: .5em;
+}
+
+select optgroup, select option {
+  background-color: #333333;
+}
+
+textarea {
+  border: 2px solid #00BFFF;
+  background-color: transparent;
+  padding: .5em;
+  border-radius: .5em;
+  width: 96%;
+  margin: 2%;
+}
+
+.form_button {
+  text-align: right;
+  height: 3em;
+}
+
+input[type=reset], input[type=submit] {
+  background-color: transparent;
+  border: 2px solid #00BFFF;
+  border-radius: 2em;
+  padding: .5em;
+  margin: 0 .5em;
+  transition: .1s;
+  height: 3em;
+  width: 6em;
+}
+
+input[type=reset]:hover, input[type=submit]:hover {
+  background-color: #00BFFF;
+  font-size: 0.9em;
+  transition: .1s;
+}
 
 /* ############### ABOUTME ############### */
 /* css in aboutme.html specifically */
