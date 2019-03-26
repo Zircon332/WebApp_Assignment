@@ -28,12 +28,11 @@
           </ul>
         </nav>
 
-
         <section>
-          <p>Welcome to the enquiry page. This is where you place your booking for renting an instrument after checking them out in our website.</p>
-          <p>Haven't decided on an instrument yet? <a href="index.html">Click here to check them out.</a></p>
-          <p>Keep in mind that all fields, unless stated otherwise, are required to be filled in, as they are necessary for us to safely delier them to you.</p>
-          <p>We respect your privacy and take protecting it seriously.
+          <p class="space_bottom">Welcome to the enquiry page. This is where you place your booking for renting an instrument after checking them out in our website.</p>
+          <p class="space_bottom">Haven't decided on an instrument yet? <a href="index.html">Click here to check them out.</a></p>
+          <p class="space_bottom">Keep in mind that all fields, unless stated otherwise, are required to be filled in, as they are necessary for us to safely delier them to you.</p>
+          <p class="space_bottom">We respect your privacy and take protecting it seriously.
             All provided informtaion will be kept securely and will be used only for the purpose of providing the service for our clients.
             For more information, check out our <a href="discalimer.html">Disclaimer page</a>.</p>
         </section>
@@ -43,20 +42,25 @@
             <h2>ENQUIRY</h2>
           </div>
           <form id="enquiry_form" enctype="text/plain" method="post" action="process.php">
-            <table>
-              <tr>
-                <td><label for="fname">First name: </label></td>
-                <td><input type="text" id="fname" name="fname" required="Required" maxlength="25" size="25" pattern="^[a-zA-Z]+$"/></td>
-              </tr>
-              <tr>
-                <td><label for="lname">Last name: </label></td>
-                <td><input type="text" id="lname" name="lname" required="Required" maxlength="25" size="25" pattern="^[a-zA-Z]+$"/></td>
-              </tr>
-              <tr>
-              <td><label for="email">Email address: </label></td>
-              <td><input type="email" id="email" name="email" required="Required" size="25"/></td>
-              </tr>
-            </table>
+            <fieldset>
+              <legend>Personal Detail: </legend>
+              <table>
+                <tr>
+                  <td><label for="fname">Name: </label></td>
+                  <td><input type="text" id="fname" name="fname" required="Required" maxlength="25" size="25" placeholder="First Name" pattern="^[a-zA-Z]+$"/>
+                  <input type="text" id="lname" name="lname" required="Required" maxlength="25" size="25" placeholder="Last Name" pattern="^[a-zA-Z]+$"/></td>
+                </tr>
+                <tr>
+                <td><label for="email">Email address: </label></td>
+                <td><input type="email" id="email" name="email" required="Required" size="25" placeholder="example@email.com" /></td>
+                </tr>
+                <tr>
+                  <td><label for="phone">Phone Number: </label></td>
+                  <td><input type="tel" id="phone" name="phone" placeholder="121-1211111" required="Required" maxlength="10" size="10"/></td>
+                </tr>
+
+              </table>
+            </fieldset>
 
             <fieldset>
               <legend>Address: </legend>
@@ -102,49 +106,48 @@
               </table>
             </fieldset>
 
-            <table>
-              <tr>
-                <td><label for="phone">Phone Number: </label></td>
-                <td><input type="tel" id="phone" name="phone" placeholder="XXXXXXXXXX" required="Required" maxlength="10" size="15"/></td>
-              </tr>
-              <tr>
-                <td><label for="product">Product: </label></td>
-                <td><select id="product" name="product" required="Required">
-                    <optgroup label="Guitar">
-                      <option value="guitar" selected="selected">Guitar</option>
-                      <option value="drum">Drum</option>
-                      <option value="piano">Piano</option>
-                      <option value="violin">Violin</option>
-                    </optgroup>
-                    <optgroup label="Drum">
-                      <option value="guitar" selected="selected">Guitar</option>
-                      <option value="drum">Drum</option>
-                      <option value="piano">Piano</option>
-                      <option value="violin">Violin</option>
-                    </optgroup>
-                    <optgroup label="Piano">
-                      <option value="guitar" selected="selected">Guitar</option>
-                      <option value="drum">Drum</option>
-                      <option value="piano">Piano</option>
-                      <option value="violin">Violin</option>
-                    </optgroup>
-                    <optgroup label="Violin">
-                      <option value="guitar" selected="selected">Guitar</option>
-                      <option value="drum">Drum</option>
-                      <option value="piano">Piano</option>
-                      <option value="violin">Violin</option>
-                    </optgroup>
-                  </select>
-                </td>
-              </tr>
-              <tr>
-                <td><label for="number">Rental duration: </label></td>
-                <td><input type="number" id="duration" name="duration" required="Required" size="10"/></td>
-              </tr>
-            </table>
+            <fieldset>
+              <legend>Rental: </legend>
+              <table>
+                <tr>
+                  <td><label for="product">Product: </label></td>
+                  <td><select id="product" name="product" required="Required">
+                      <optgroup label="Guitar">
+                        <option value="guitar" selected="selected">Guitar</option>
+                        <option value="drum">Drum</option>
+                        <option value="piano">Piano</option>
+                        <option value="violin">Violin</option>
+                      </optgroup>
+                      <optgroup label="Drum">
+                        <option value="guitar" selected="selected">Guitar</option>
+                        <option value="drum">Drum</option>
+                        <option value="piano">Piano</option>
+                        <option value="violin">Violin</option>
+                      </optgroup>
+                      <optgroup label="Piano">
+                        <option value="guitar" selected="selected">Guitar</option>
+                        <option value="drum">Drum</option>
+                        <option value="piano">Piano</option>
+                        <option value="violin">Violin</option>
+                      </optgroup>
+                      <optgroup label="Violin">
+                        <option value="guitar" selected="selected">Guitar</option>
+                        <option value="drum">Drum</option>
+                        <option value="piano">Piano</option>
+                        <option value="violin">Violin</option>
+                      </optgroup>
+                    </select>
+                  </td>
+                </tr>
+                <tr>
+                  <td><label for="duration">Rental duration: </label></td>
+                  <td><input type="number" id="duration" name="duration" required="Required" size="5"/>days</td>
+                </tr>
+              </table>
+            </fieldset>
 
             <p><label for="comments">Comment: </label><br/>
-              <textarea name="comments" rows="4" cols="50">Enter comments here. (Not required)</textarea>
+              <textarea id="comments" name="comments" rows="4" cols="50" placeholder="Enter comments here. (Not required)"></textarea>
             </p>
 
             <div class="form_button">
