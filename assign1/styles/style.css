@@ -14,12 +14,18 @@ body {
   margin: 0;
   padding: 0;
   background-color: #1e1e1e;
-
 }
-
 
 header {
   background-color: darkgrey;
+}
+
+section {
+    margin: 2% 10%;
+}
+
+aside {
+    margin: 2% 10%;
 }
 
 footer {
@@ -103,25 +109,26 @@ li {
 .form_header {
   text-align: center;
   background-color: #00BFFF;
-  margin: 0 5%;
+  margin: 2em 5% 0;
 }
 
 form {
-  margin: 0 10%;
+  margin: 0 10% 5%;
+  font-size: 1.2em;
 }
 
 fieldset {
   border-radius: 1em;
   border: 1px solid #00BFFF;
-  margin: 1% 0;
+  margin: 1.2em 0;
 }
 
 form legend {
   text-align: center;
 }
 
-form label {
-  margin-left: 1em;
+form table {
+  margin-left: 1.2em;
 }
 
 input[type=text], input[type=email], input[type=number], input[type=tel] {
@@ -129,6 +136,7 @@ input[type=text], input[type=email], input[type=number], input[type=tel] {
   border-bottom: 2px solid #00BFFF;
   background-color: transparent;
   padding: .5em;
+  margin-left: 1vh;
 }
 
 input[type=text]:hover, input[type=email]:hover, input[type=number]:hover, input[type=tel]:hover {
@@ -141,6 +149,7 @@ select {
   border-bottom: 2px solid #00BFFF;
   background-color: transparent;
   padding: .5em;
+  margin-left: 1vh;
 }
 
 select optgroup, select option {
@@ -176,6 +185,30 @@ input[type=reset]:hover, input[type=submit]:hover {
   background-color: #00BFFF;
   font-size: 0.9em;
   transition: .1s;
+}
+
+@media only screen and (min-width: 1000px) {
+  form {
+    width: 36%;
+    float: left;
+  }
+
+  .form_header {
+    margin-left: 8%;
+    width: 40%;
+  }
+
+  aside {
+    float: left;
+    width: 30%;
+    margin: 0 5%;
+  }
+
+  footer {
+    clear: both;
+  }
+  }
+
 }
 
 /* ############### ABOUTME ############### */
