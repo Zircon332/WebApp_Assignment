@@ -96,8 +96,6 @@ li {
 }
 
 
-
-
 /* ############### INDEX ############### */
 /* css in index.html specifically */
 
@@ -112,9 +110,17 @@ li {
 
 /* ############### PRODUCT ############### */
 /* css in product.html specifically */
-
-
-
+.block{
+    display: block;
+    margin-bottom: 30%;
+    margin-top: 10%;
+}
+.forblock{
+    display: inline-block;
+}
+.borderit{
+    border: 4px solid white;
+}
 
 /* ############## DISCLAIMER ############## */
 /* css in disclaimer.html specifically */
