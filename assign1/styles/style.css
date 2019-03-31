@@ -20,6 +20,10 @@ header {
   background-color: darkgrey;
 }
 
+h2{
+    text-align: center;
+}
+
 #logo img {
   width: 8em;
 }
@@ -341,16 +345,38 @@ footer{
 
 /* ############### PRODUCT ############### */
 /* css in product.html specifically */
+.thumbnails{
+    border: 1px solid #ddd; 
+    border-radius: 4px;  
+    padding: 5px; 
+    width: 30%;
+}
+
+.thumbnails:hover{
+    width: 40%;
+    transition: .1s;
+}
+
 .block{
     display: block;
     margin-bottom: 30%;
     margin-top: 10%;
 }
 .forblock{
-    display: inline-block;
+    text-align: center;
+    margin-left: 20%;
+    margin-right: 20%;
 }
 .borderit{
     border: 4px solid white;
+}
+
+.specimg{
+    float: left;
+    border: 1px solid #ddd; 
+    border-radius: 4px;  
+    padding: 5px; 
+    width: 40%;
 }
 
 /* ############## DISCLAIMER ############## */
