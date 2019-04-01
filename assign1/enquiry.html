@@ -15,13 +15,19 @@
             </div>
         </header>
         <nav>
-            <ul>
-              <li><a href="index.html">Home</a></li>
-              <li><a href="product2.html">Product</a></li>
-              <li><a href="">Enquiry</a></li>
-              <li><a href="">About Us</a></li>
-              <li><a href="disclaimer.html">Disclaimer</a></li>
-          </ul>
+        	<ul>
+        		<li><a href="index.html">Home</a></li>
+        		<li><a href="#">Products</a>
+        			<ul>
+        				<li><a href="product1.html">Brass</a></li>
+        				<li><a href="product2.html">Strings</a></li>
+        				<li><a href="product3.html">Woodwind</a></li>
+        				<li><a href="product4.html">Percussion</a></li>
+        			</ul>
+        		</li>
+        		<li><a href="enquiry.html">Enquiry</a></li>
+        		<li><a href="disclaimer.html">Disclaimer</a></li>
+        	</ul>
         </nav>
         <div id="banner">
           <!-- <div id="banner_text">
@@ -49,7 +55,7 @@
           </div>
           <form id="enquiry_form" enctype="text/plain" method="post" action="process.php">
             <fieldset>
-              <legend>Personal Detail: </legend>
+              <legend>Personal Detail : </legend>
               <table>
                 <tr>
                   <td><label for="fname">Name: </label></td>
@@ -69,7 +75,7 @@
             </fieldset>
 
             <fieldset>
-              <legend>Address: </legend>
+              <legend>Address : </legend>
               <table>
                 <tr>
                   <td><label for="street">Street address: </label></td>
@@ -113,7 +119,7 @@
             </fieldset>
 
             <fieldset>
-              <legend>Rental: </legend>
+              <legend>Rental : </legend>
               <table>
                 <tr>
                   <td><label for="product">Product: </label></td>
@@ -171,14 +177,34 @@
 
 
         <footer>
-          <hr/>
-            <ul>
-                <li><a href=""></a></li>
-                <li><a href=""></a></li>
-                <li><a href=""></a></li>
-                <li><a href=""></a></li>
-                <li><a href=""></a></li>
-            </ul>
+          <div class="footer_grid">
+            <div id="footer_item_1">
+          		<img src="image/logo.gif" alt="logo"/>
+              <h2>short desc of cmpny</h2>
+              <p>..................................................</p>
+              <p>..................................................</p>
+              </div>
+            <div id='footer_item_2'>
+          		<h2>Check out</h2>
+          		<p><a href="">Home</a></p>
+          		<p><a href="">Enquiry</a></p>
+          		<p><a href="">About Us</a></p>
+          	</div>
+            <div id='footer_item_3'>
+          		<h2>Products</h2>
+              <p><a href="product1.html">Brass</a></p>
+              <p><a href="product2.html">Strings</a></p>
+              <p><a href="product3.html">Woodwind</a></p>
+              <p><a href="product4.html">Percussion</a></p>
+          	</div>
+          	<div id='footer_item_4'>
+          		<h2>Contact us</h2>
+          		<p><a href="">Facebook</a></p>
+          		<p><a href="mailto:Rentone@gmail.com">Email us</p>
+          		<p><a href="tel:">Phone Us</a></p>
+          	</div>
+          </div>
+          <p class="footer_copyright">All rights reserved | &copy; Team Easier To Remember</p>
         </footer>
     </body>
 </html>
