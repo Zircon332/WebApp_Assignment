@@ -28,6 +28,7 @@ h2{
   width: 8em;
 }
 
+
 #banner {
   height: 76vh;
   background-image: url(image/banner2.jpg);
@@ -338,11 +339,11 @@ footer p{
     border: 1px solid #ddd;
     border-radius: 4px;
     padding: 5px;
-    width: 30%;
+    width: 400px;
 }
 
 .thumbnails:hover{
-    width: 40%;
+    width: 450px;
     transition: .1s;
 }
 
@@ -361,10 +362,9 @@ footer p{
 }
 
 .specimg{
-    float: left;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    padding: 5px;
+    border: 1px solid #ddd; 
+    border-radius: 4px;  
+    padding: 5px; 
     width: 40%;
 }
 
