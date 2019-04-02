@@ -365,15 +365,15 @@ footer p{
 }
 
 .specimg{
-    border: 1px solid #ddd; 
-    border-radius: 4px;  
-    padding: 5px; 
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
     width: 40%;
 }
 ol li{
     text-align: left;
     font-weight: bold;
-    font-size: 1.25em;    
+    font-size: 1.25em;
 }
 
 ol li p{
@@ -384,7 +384,20 @@ ol li p{
 ol li table{
     font-size: 0.8em;
     font-weight: normal;
+    width: 70%;
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
 }
+ol li table,th,td{
+  border: 2px solid white;
+  border-collapse: collapse;
+}
+ol li table th, td{
+  text-align: center;
+  padding: .5em;
+}
+
+
 /* ############## DISCLAIMER ############## */
 /* css in disclaimer.html specifically */
 
