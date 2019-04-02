@@ -345,8 +345,8 @@ footer p{
 }
 
 .thumbnails:hover{
-    width: 35%;
-    height: 35%;
+    width: 45%;
+    height: 45%;
     transition: .1s;
 }
 
@@ -364,12 +364,6 @@ footer p{
     border: 4px solid white;
 }
 
-.specimg{
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    padding: 5px;
-    width: 40%;
-}
 ol li{
     text-align: left;
     font-weight: bold;
