@@ -370,7 +370,21 @@ footer p{
     padding: 5px; 
     width: 40%;
 }
+ol li{
+    text-align: left;
+    font-weight: bold;
+    font-size: 1.25em;    
+}
 
+ol li p{
+    font-size: 0.8em;
+    font-weight: normal;
+}
+
+ol li table{
+    font-size: 0.8em;
+    font-weight: normal;
+}
 /* ############## DISCLAIMER ############## */
 /* css in disclaimer.html specifically */
 

@@ -1,210 +1,213 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8"/>
-        <meta name="author" content="Wong Jun Jie, Wong Kah Heng, Joel Yeong, Ryan"/>
-        <meta name="description" content=""/>
-        <meta name="keywords" content=""/>
-        <title>Enquiry|Music Rental</title>
-        <link rel="stylesheet" type="text/css" href="styles/style.css">
-    </head>
-    <body>
-        <header>
-            <div id="logo">
-                <img src="image/logo.gif" alt="logo"/> <!-- https://www.google.com/search?q=music+rental+logo&rlz=1C1GCEJ_enMY842MY842&tbm=isch&source=iu&ictx=1&fir=MbPvCTUvLQPHlM%253A%252ClQdQacHjl7eSOM%252C_&vet=1&usg=AI4_-kQB1eiDk9RWKMmH0FTv45qccPoFwQ&sa=X&ved=2ahUKEwis-sbDl6HhAhXFh3AKHX4rB6QQ9QEwAnoECAkQCA#imgrc=j-82AillGreLPM:&vet=1 -->
-            </div>
-        </header>
-        <nav>
-        	<ul>
-        		<li><a href="index.html">Home</a></li>
-        		<li><a href="#">Products</a>
-        			<ul>
-        				<li><a href="product1.html">Brass</a></li>
-        				<li><a href="product2.html">Strings</a></li>
-        				<li><a href="product3.html">Woodwind</a></li>
-        				<li><a href="product4.html">Percussion</a></li>
-        			</ul>
-        		</li>
-        		<li><a href="enquiry.html">Enquiry</a></li>
-        		<li><a href="disclaimer.html">Disclaimer</a></li>
-        	</ul>
-        </nav>
-        <div id="banner">
-          <!-- <div id="banner_text">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="author" content="Wong Jun Jie, Wong Kah Heng, Joel Yeong, Ryan" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <title>Enquiry|Music Rental</title>
+    <link rel="stylesheet" type="text/css" href="styles/style.css">
+</head>
+
+<body>
+    <header>
+        <div id="logo">
+            <img src="image/logo.gif" alt="logo" /> <!-- https://www.google.com/search?q=music+rental+logo&rlz=1C1GCEJ_enMY842MY842&tbm=isch&source=iu&ictx=1&fir=MbPvCTUvLQPHlM%253A%252ClQdQacHjl7eSOM%252C_&vet=1&usg=AI4_-kQB1eiDk9RWKMmH0FTv45qccPoFwQ&sa=X&ved=2ahUKEwis-sbDl6HhAhXFh3AKHX4rB6QQ9QEwAnoECAkQCA#imgrc=j-82AillGreLPM:&vet=1 -->
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">Products</a>
+                <ul>
+                    <li><a href="product1.html">Brass</a></li>
+                    <li><a href="product2.html">Strings</a></li>
+                    <li><a href="product3.html">Woodwind</a></li>
+                    <li><a href="product4.html">Percussion</a></li>
+                </ul>
+            </li>
+            <li><a href="enquiry.html">Enquiry</a></li>
+            <li><a href="disclaimer.html">Disclaimer</a></li>
+        </ul>
+    </nav>
+    <div id="banner">
+        <!-- <div id="banner_text">
             <h1>Enquiry</h1>
             <p></p>
             <a></a>
           </div> -->
-        </div>
+    </div>
 
-        <section>
-          <p class="space_bottom">Welcome to the <strong>enquiry page<strong>. This is where you place your booking for renting an instrument.</p>
-		  <hr />
-		  <p class="space_bottom">Haven't decided on an instrument yet? <a href="index.html">Click here to check them out.</a></p>
-          <hr />
-		  <p class="space_bottom">All fields, unless stated otherwise, are required to be filled in, as they are necessary for us to safely deliver you.</p>
-          <hr />
-		  <p class="space_bottom">We respect your privacy and take protecting it seriously.<br />
+    <section>
+        <p class="space_bottom">Welcome to the <strong>enquiry page</strong>. This is where you place your booking for renting an instrument.</p>
+        <hr />
+        <p class="space_bottom">Haven't decided on an instrument yet? <a href="index.html">Click here to check them out.</a></p>
+        <hr />
+        <p class="space_bottom">All fields, unless stated otherwise, are required to be filled in, as they are necessary for us to safely deliver you.</p>
+        <hr />
+        <p class="space_bottom">We respect your privacy and take protecting it seriously.<br />
             All provided informtaion will be used only for the purpose of providing service for our clients.<br />
             For more information, check out our <a href="discalimer.html">Disclaimer page</a>.</p>
-        </section>
+    </section>
 
-        <article>
-          <div class="form_header">
+    <article>
+        <div class="form_header">
             <h2>ENQUIRY</h2>
-          </div>
-          <form id="enquiry_form" enctype="text/plain" method="post" action="process.php">
+        </div>
+        <form id="enquiry_form" enctype="text/plain" method="post" action="process.php">
             <fieldset>
-              <legend>Personal Detail : </legend>
-              <table>
-                <tr>
-                  <td><label for="fname">Name: </label></td>
-                  <td><input type="text" id="fname" name="fname" required="Required" maxlength="25" size="25" placeholder="First Name" pattern="^[a-zA-Z]+$"/>
-                  <input type="text" id="lname" name="lname" required="Required" maxlength="25" size="25" placeholder="Last Name" pattern="^[a-zA-Z]+$"/></td>
-                </tr>
-                <tr>
-                <td><label for="email">Email address: </label></td>
-                <td><input type="email" id="email" name="email" required="Required" size="25" placeholder="example@email.com" /></td>
-                </tr>
-                <tr>
-                  <td><label for="phone">Phone Number: </label></td>
-                  <td><input type="tel" id="phone" name="phone" placeholder="121-1211111" required="Required" maxlength="10" size="10"/></td>
-                </tr>
+                <legend>Personal Detail : </legend>
+                <table>
+                    <tr>
+                        <td><label for="fname">Name: </label></td>
+                        <td><input type="text" id="fname" name="fname" required="Required" maxlength="25" size="25" placeholder="First Name" pattern="^[a-zA-Z]+$" />
+                            <input type="text" id="lname" name="lname" required="Required" maxlength="25" size="25" placeholder="Last Name" pattern="^[a-zA-Z]+$" /></td>
+                    </tr>
+                    <tr>
+                        <td><label for="email">Email address: </label></td>
+                        <td><input type="email" id="email" name="email" required="Required" size="25" placeholder="example@email.com" /></td>
+                    </tr>
+                    <tr>
+                        <td><label for="phone">Phone Number: </label></td>
+                        <td><input type="tel" id="phone" name="phone" placeholder="121-1211111" required="Required" maxlength="10" size="10" /></td>
+                    </tr>
 
-              </table>
+                </table>
             </fieldset>
 
             <fieldset>
-              <legend>Address : </legend>
-              <table>
-                <tr>
-                  <td><label for="street">Street address: </label></td>
-                  <td><input type="text" id="street" name="street" required="Required" maxlength="40" size="22" placeholder="Street Address" /></td>
-                </tr>
-                <tr>
-                <td><label for="city">City/town: </label></td>
-                <td><input type="text" id="city" name="city" required="Required" maxlength="20" size="22" placeholder="City / Town" /></td>
-                </tr>
-                <tr>
-                  <td><label for="state">State: </label></td>
-                  <td><select id="state" name="state" required="Required">
-                      <optgroup label="States">
-                        <option value="johor" selected="selected">Johor</option>
-                        <option value="kedah">Kedah</option>
-                        <option value="kelantan">Kelantan</option>
-                        <option value="malacca">Malacca</option>
-                        <option value="negeri_sembilan">Negeri Sembilan</option>
-                        <option value="pahang">Pahang</option>
-                        <option value="penang">Penang</option>
-                        <option value="perak">Perak</option>
-                        <option value="perlis">Perlis</option>
-                        <option value="sabah">Sabah</option>
-                        <option value="sarawak">Sarawak</option>
-                        <option value="selanggor">Selanggor</option>
-                        <option value="terengganu">Terengganu</option>
-                      </optgroup>
-                      <optgroup label="Federal Territories">
-                        <option value="kuala_lumpur">Kuala Lumpur</option>
-                        <option value="labuan">Labuan</option>
-                        <option value="putrajaya">Putrajaya</option>
-                      </optgroup>
-                    </select>
-                  </td>
-                </tr>
-                <tr>
-                  <td><label for="postcode">Postcode: </label></td>
-                  <td><input type="text" id="postcode" name="postcode" required="Required" pattern="[0-9]{5}" maxlength="5" size="5" placeholder="12345" required="Required"/></td>
-                </tr>
-              </table>
+                <legend>Address : </legend>
+                <table>
+                    <tr>
+                        <td><label for="street">Street address: </label></td>
+                        <td><input type="text" id="street" name="street" required="Required" maxlength="40" size="22" placeholder="Street Address" /></td>
+                    </tr>
+                    <tr>
+                        <td><label for="city">City/town: </label></td>
+                        <td><input type="text" id="city" name="city" required="Required" maxlength="20" size="22" placeholder="City / Town" /></td>
+                    </tr>
+                    <tr>
+                        <td><label for="state">State: </label></td>
+                        <td><select id="state" name="state" required="Required">
+                                <optgroup label="States">
+                                    <option value="johor" selected="selected">Johor</option>
+                                    <option value="kedah">Kedah</option>
+                                    <option value="kelantan">Kelantan</option>
+                                    <option value="malacca">Malacca</option>
+                                    <option value="negeri_sembilan">Negeri Sembilan</option>
+                                    <option value="pahang">Pahang</option>
+                                    <option value="penang">Penang</option>
+                                    <option value="perak">Perak</option>
+                                    <option value="perlis">Perlis</option>
+                                    <option value="sabah">Sabah</option>
+                                    <option value="sarawak">Sarawak</option>
+                                    <option value="selanggor">Selanggor</option>
+                                    <option value="terengganu">Terengganu</option>
+                                </optgroup>
+                                <optgroup label="Federal Territories">
+                                    <option value="kuala_lumpur">Kuala Lumpur</option>
+                                    <option value="labuan">Labuan</option>
+                                    <option value="putrajaya">Putrajaya</option>
+                                </optgroup>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="postcode">Postcode: </label></td>
+                        <td><input type="text" id="postcode" name="postcode" required="Required" pattern="[0-9]{5}" maxlength="5" size="5" placeholder="12345" required="Required" /></td>
+                    </tr>
+                </table>
             </fieldset>
 
             <fieldset>
-              <legend>Rental : </legend>
-              <table>
-                <tr>
-                  <td><label for="product">Product: </label></td>
-                  <td><select id="product" name="product" required="Required">
-                      <optgroup label="Guitar">
-                        <option value="guitar" selected="selected">Guitar</option>
-                        <option value="drum">Drum</option>
-                        <option value="piano">Piano</option>
-                        <option value="violin">Violin</option>
-                      </optgroup>
-                      <optgroup label="Drum">
-                        <option value="guitar" selected="selected">Guitar</option>
-                        <option value="drum">Drum</option>
-                        <option value="piano">Piano</option>
-                        <option value="violin">Violin</option>
-                      </optgroup>
-                      <optgroup label="Piano">
-                        <option value="guitar" selected="selected">Guitar</option>
-                        <option value="drum">Drum</option>
-                        <option value="piano">Piano</option>
-                        <option value="violin">Violin</option>
-                      </optgroup>
-                      <optgroup label="Violin">
-                        <option value="guitar" selected="selected">Guitar</option>
-                        <option value="drum">Drum</option>
-                        <option value="piano">Piano</option>
-                        <option value="violin">Violin</option>
-                      </optgroup>
-                    </select>
-                  </td>
-                </tr>
-                <tr>
-                  <td><label for="duration">Rental duration: </label></td>
-                  <td><input type="number" id="duration" name="duration" required="Required" size="5" placeholder="XX" />days</td>
-                </tr>
-              </table>
+                <legend>Rental : </legend>
+                <table>
+                    <tr>
+                        <td><label for="product">Product: </label></td>
+                        <td><select id="product" name="product" required="Required">
+                                <optgroup label="Guitar">
+                                    <option value="guitar" selected="selected">Guitar</option>
+                                    <option value="drum">Drum</option>
+                                    <option value="piano">Piano</option>
+                                    <option value="violin">Violin</option>
+                                </optgroup>
+                                <optgroup label="Drum">
+                                    <option value="guitar" selected="selected">Guitar</option>
+                                    <option value="drum">Drum</option>
+                                    <option value="piano">Piano</option>
+                                    <option value="violin">Violin</option>
+                                </optgroup>
+                                <optgroup label="Piano">
+                                    <option value="guitar" selected="selected">Guitar</option>
+                                    <option value="drum">Drum</option>
+                                    <option value="piano">Piano</option>
+                                    <option value="violin">Violin</option>
+                                </optgroup>
+                                <optgroup label="Violin">
+                                    <option value="guitar" selected="selected">Guitar</option>
+                                    <option value="drum">Drum</option>
+                                    <option value="piano">Piano</option>
+                                    <option value="violin">Violin</option>
+                                </optgroup>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="duration">Rental duration: </label></td>
+                        <td><input type="number" id="duration" name="duration" required="Required" size="5" placeholder="XX" />days</td>
+                    </tr>
+                </table>
             </fieldset>
 
-            <p><label for="comments">Comment: </label><br/>
-              <textarea id="comments" name="comments" rows="4" cols="50" placeholder="Enter comments here. (Not required)"></textarea>
+            <p><label for="comments">Comment: </label><br />
+                <textarea id="comments" name="comments" rows="4" cols="50" placeholder="Enter comments here. (Not required)"></textarea>
             </p>
 
             <div class="form_button">
-              <input type="Reset" value="Reset"/>
-              <input type="Submit" value="Submit"/>
+                <input type="Reset" value="Reset" />
+                <input type="Submit" value="Submit" />
             </div>
-          </form>
-        </article>
+        </form>
+    </article>
 
-        <aside>
-          <h3>Still need help? Contact us at: </h3>
-          <p>Email: <a href="mailto:whoisdis@gmail.com">whoisdis@gmail.com</a></p>
-          <p>Phone: <a href="tel:911111111111111111111111111111111111">911</a></p>
-        </aside>
+    <aside>
+        <h3>Still need help? Contact us at: </h3>
+        <p>Email: <a href="mailto:whoisdis@gmail.com">whoisdis@gmail.com</a></p>
+        <p>Phone: <a href="tel:911111111111111111111111111111111111">911</a></p>
+    </aside>
 
 
-        <footer>
-          <div class="footer_grid">
+    <footer>
+        <div class="footer_grid">
             <div id="footer_item_1">
-          		<img src="image/logo.gif" alt="logo"/>
-              <h2>short desc of cmpny</h2>
-              <p>..................................................</p>
-              <p>..................................................</p>
-              </div>
+                <img src="image/logo.gif" alt="logo" />
+                <h2>short desc of cmpny</h2>
+                <p>..................................................</p>
+                <p>..................................................</p>
+            </div>
             <div id='footer_item_2'>
-          		<h2>Check out</h2>
-          		<p><a href="">Home</a></p>
-          		<p><a href="">Enquiry</a></p>
-          		<p><a href="">About Us</a></p>
-          	</div>
+                <h2>Check out</h2>
+                <p><a href="">Home</a></p>
+                <p><a href="">Enquiry</a></p>
+                <p><a href="">About Us</a></p>
+            </div>
             <div id='footer_item_3'>
-          		<h2>Products</h2>
-              <p><a href="product1.html">Brass</a></p>
-              <p><a href="product2.html">Strings</a></p>
-              <p><a href="product3.html">Woodwind</a></p>
-              <p><a href="product4.html">Percussion</a></p>
-          	</div>
-          	<div id='footer_item_4'>
-          		<h2>Contact us</h2>
-          		<p><a href="">Facebook</a></p>
-          		<p><a href="mailto:Rentone@gmail.com">Email us</p>
-          		<p><a href="tel:">Phone Us</a></p>
-          	</div>
-          </div>
-          <p class="footer_copyright">All rights reserved | &copy; Team Easier To Remember</p>
-        </footer>
-    </body>
+                <h2>Products</h2>
+                <p><a href="product1.html">Brass</a></p>
+                <p><a href="product2.html">Strings</a></p>
+                <p><a href="product3.html">Woodwind</a></p>
+                <p><a href="product4.html">Percussion</a></p>
+            </div>
+            <div id='footer_item_4'>
+                <h2>Contact us</h2>
+                <p><a href="">Facebook</a></p>
+                <p><a href="mailto:Rentone@gmail.com">Email us</p>
+                <p><a href="tel:">Phone Us</a></p>
+            </div>
+        </div>
+        <p class="footer_copyright">All rights reserved | &copy; Team Easier To Remember</p>
+    </footer>
+</body>
+
 </html>
