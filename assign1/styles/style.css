@@ -143,7 +143,7 @@ footer p{
 
 .footer_grid{
   display: grid;
-	background-color: #333334;
+  background-color: #333334;
   padding: 1% 10% .5%;
   grid-template-columns: 46% 18% 18% 18%;
 }
@@ -210,56 +210,61 @@ footer p{
 	margin:2%;
 }
 .textinfo p{
-	color: #ffd257;
+	color: white;
+	font-size:120%;
 }
 
 .textinfo h2{
 	color:#ffd257;
+	font-size:220%;
 }
 
+
 #menu{
-	position:relative;
-	left:10%;
-	right:10%;
-	margin:0;
-	width:80%;
-	text-align: center;
+	display:grid;
+	grid-template-columns:23% 23% 23% 23%;
+	margin-left:8%;
+
 }
 
 
 #cat1{
-	position:absolute;
-	margin:0;
-	width:25%;
-	border: 1px solid black;
+	grid-column:1;
+	
 }
 
 #cat2{
-	position:absolute;
-	margin:0;
-	width:25%;
-	left:25%;
-	border: 1px solid black;
-
-
+	grid-column:2;
+	
 }
 
 #cat3{
-	position:absolute;
-	margin:0;
-	width:25%;
-	left:50%;
-	border: 1px solid black;
-
+	grid-column:3;
+	
 }
 
 #cat4{
-	position:absolute;
-	margin:0;
-	width:25%;
-	left:75%;
-	border: 1px solid black;
+	grid-column:4;
+	
+}
 
+#cat1, #cat2, #cat3, #cat4{
+	text-align:center;
+	position:relative;
+}
+
+#cat1 h2, #cat2 h2, #cat3 h2, #cat4 h2{
+	top:70%;
+	left:30%;
+	text-align:center;
+	z-index:0;
+	color:#ffd257;
+	position:absolute;
+	font-size: 220%;
+}
+
+#cat1:hover img, #cat2:hover img, #cat3:hover img, #cat4:hover img{
+	opacity:0.5;
 }
 
 #about{
@@ -275,18 +280,20 @@ footer p{
 
 
 #about table th, #about table td{
-	padding:6px;
-	color: #ffd257;
+	padding:20px;
+	color: white;
+	font-size:120%;
+	text-align:center;
 }
 
 #about table th{
 	padding-bottom:1%;
-	color: #ffd257;
+	font-size:180%;
 }
 
 #homeenq{
 	text-align:center;
-	background-color:#00BFFF;
+	background-color:#e5bd4e;
 	border:1px solid black;
 	margin:2%;
 	border-radius:1em;
@@ -294,7 +301,7 @@ footer p{
 
 .button {
 	border-radius: 4px;
-	background-color: #f4511e;
+	background-color: #474748;
 	border: none;
 	font-size: 150%;
 	padding: 1.5%;
