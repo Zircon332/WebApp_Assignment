@@ -392,6 +392,62 @@ ol li table th, td{
   padding: .5em;
 }
 
+.ppdesc{
+	margin-left:3%;
+	margin-right:3%;
+}
+
+.productcontainer1{
+	display:grid;
+	grid-template-columns: 28% 28% 28%;
+	margin-left:13%;
+
+}
+
+.cont1{
+	grid-column: 1;
+}
+
+.cont2{
+	grid-column: 2;
+}
+
+.cont3{
+	grid-column: 3;
+}
+
+.productcontainer2{
+	display:grid;
+	grid-template-columns:32% 32%;
+	margin-left:24%;
+}
+
+.cont4{
+	grid-column: 1;
+}
+
+.cont5{
+	grid-column: 2;
+}
+
+.cont1, .cont2, .cont3, .cont4, .cont5{
+	text-align:center;
+	position:relative;
+}
+
+.cont1 h2, .cont2 h2, .cont3 h2, .cont4 h2, .cont5 h2{
+	top:60%;
+	left:30%;
+	text-align:center;
+	z-index:0;
+	color:#ffd257;
+	position:absolute;
+	font-size: 220%;
+}
+
+.cont1:hover img, .cont2:hover img, .cont3:hover img, .cont4:hover img, .cont5:hover img{
+	opacity:0.5;
+}
 
 /* ############## DISCLAIMER ############## */
 /* css in disclaimer.html specifically */
