@@ -113,6 +113,7 @@ nav ul li ul{
 
 nav ul li:hover ul{
   display: block;
+  z-index: 1;
 }
 
 nav ul li ul li {
@@ -129,6 +130,27 @@ nav ul li ul li a:hover{
   background: #444444;
 }
 
+@media only screen and (max-width: 800px) {
+  nav {
+    height: 25em;
+  }
+  nav li {
+    display: block;
+    text-align: left;
+    margin: 5% 0;
+  }
+  nav li a {
+    padding: 0;
+  }
+  nav ul li ul {
+    width: 50%;
+    position: relative;
+    display: block;
+  }
+  nav ul li ul li {
+    margin: 0;
+  }
+}
 
 footer h2{
   text-align: left;
