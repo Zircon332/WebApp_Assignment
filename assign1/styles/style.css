@@ -30,9 +30,10 @@ h2{
 
 
 #banner {
-  height: 76vh;
+  height: 80vh;
   background-image: url(image/banner2.jpg);
   margin-bottom: 10%;
+  background-size: cover;
 }
 
 section {
@@ -216,8 +217,7 @@ footer p{
 
 #menu{
 	display:grid;
-	grid-template-columns: 23% 23% 23% 23%;
-	margin-left:8%;
+	grid-template-columns: 25% 25% 25% 25%;
   margin-bottom: 10%;
 }
 
@@ -238,7 +238,6 @@ footer p{
 }
 
 #cat1, #cat2, #cat3, #cat4{
-	text-align:center;
 	position:relative;
   overflow: hidden;
 }
@@ -246,11 +245,16 @@ footer p{
 #cat1 h2, #cat2 h2, #cat3 h2, #cat4 h2{
 	top:70%;
 	left:30%;
-	text-align:center;
 	z-index:0;
 	color:#ffd257;
 	position:absolute;
-	font-size: 220%;
+	font-size: 2em;
+}
+
+@media only screen and (max-width: 1000px) {
+  #cat1 h2, #cat2 h2, #cat3 h2, #cat4 h2{
+    font-size: 1.5em;
+  }
 }
 
 #cat1:hover img, #cat2:hover img, #cat3:hover img, #cat4:hover img{
@@ -284,7 +288,7 @@ footer p{
 	text-align:center;
 	background-color:#e5bd4e;
 	border:1px solid black;
-	margin:2%;
+	margin:2% 2% 5%;
 	border-radius:1em;
 }
 
@@ -396,8 +400,9 @@ ol li table th, ol li table td{
 
 .productcontainer1{
 	display:grid;
-	grid-template-columns: 28% 28% 28%;
-	margin-left:13%;
+	grid-template-columns: 30% 30% 30%;
+  grid-column-gap: 5%;
+	margin: 1% 10%;
 }
 
 .cont1{
@@ -414,8 +419,9 @@ ol li table th, ol li table td{
 
 .productcontainer2{
 	display:grid;
-	grid-template-columns:32% 32%;
-	margin-left:24%;
+	grid-template-columns: 45% 45%;
+  grid-column-gap: 5%;
+	margin: 1% 24%;
 }
 
 .cont4{
@@ -429,6 +435,7 @@ ol li table th, ol li table td{
 .cont1, .cont2, .cont3, .cont4, .cont5{
 	text-align:center;
 	position:relative;
+  overflow: hidden;
 }
 
 .cont1 h2, .cont2 h2, .cont3 h2, .cont4 h2, .cont5 h2{
