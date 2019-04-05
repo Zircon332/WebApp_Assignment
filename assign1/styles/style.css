@@ -24,10 +24,13 @@ h2{
     text-align: center;
 }
 
-#logo img {
-  width: 8em;
+#logo {
+  text-align: center;
 }
 
+#logo img {
+  width: 10em;
+}
 
 #banner {
   height: 80vh;
