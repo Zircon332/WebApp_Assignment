@@ -303,6 +303,7 @@ footer p{
 	color:#ffd257;
 	position:absolute;
 	font-size: 2em;
+  text-shadow: 1px 1px 2px #000000;
 }
 
 @media only screen and (max-width: 1000px) {
@@ -505,6 +506,7 @@ ol li table th, ol li table td{
 	color:#ffd257;
 	position:absolute;
 	font-size: 220%;
+  text-shadow: 1px 1px 2px #000000; 
 }
 
 .cont1:hover img, .cont2:hover img, .cont3:hover img, .cont4:hover img, .cont5:hover img, .cont6:hover img{
