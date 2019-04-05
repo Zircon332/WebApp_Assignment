@@ -487,13 +487,17 @@ ol li table th, ol li table td{
 	grid-column: 2;
 }
 
-.cont1, .cont2, .cont3, .cont4, .cont5{
+.cont6{
+  grid-column: 3;
+}
+
+.cont1, .cont2, .cont3, .cont4, .cont5, .cont6{
 	text-align:center;
 	position:relative;
   overflow: hidden;
 }
 
-.cont1 h2, .cont2 h2, .cont3 h2, .cont4 h2, .cont5 h2{
+.cont1 h2, .cont2 h2, .cont3 h2, .cont4 h2, .cont5 h2, .cont6 h2{
 	top:60%;
 	left:30%;
 	text-align:center;
@@ -503,7 +507,7 @@ ol li table th, ol li table td{
 	font-size: 220%;
 }
 
-.cont1:hover img, .cont2:hover img, .cont3:hover img, .cont4:hover img, .cont5:hover img{
+.cont1:hover img, .cont2:hover img, .cont3:hover img, .cont4:hover img, .cont5:hover img, .cont6:hover img{
 	opacity:0.5;
 }
 
