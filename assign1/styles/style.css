@@ -29,7 +29,7 @@ h2{
 }
 
 #logo img {
-  width: 15%;
+  width: 12em;
 }
 
 #banner {
@@ -132,18 +132,18 @@ nav ul li ul li a:hover{
 
 @media only screen and (max-width: 800px) {
   nav {
-    height: 25em;
+    height: 23em;
   }
   nav li {
     display: block;
     text-align: left;
-    margin: 5% 0;
+    margin: 3% 0;
   }
   nav li a {
     padding: 0;
   }
   nav ul li ul {
-    width: 50%;
+    width: 100%;
     position: relative;
     display: block;
   }
