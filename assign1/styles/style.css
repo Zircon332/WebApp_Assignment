@@ -506,7 +506,7 @@ ol li table th, ol li table td{
 	color:#ffd257;
 	position:absolute;
 	font-size: 220%;
-  text-shadow: 1px 1px 2px #000000; 
+  text-shadow: 1px 1px 2px #000000;
 }
 
 .cont1:hover img, .cont2:hover img, .cont3:hover img, .cont4:hover img, .cont5:hover img, .cont6:hover img{
@@ -705,12 +705,82 @@ input[type=reset]:hover, input[type=submit]:hover {
 /* css in aboutme.html specifically */
 
 #aboutimg{
-	float:left;
-	width:35%;
-	margin: 5% 0 10% 15%;
+	margin: 5%;
+  text-align: center;
+}
+
+#aboutimg  {
+  float: left;
+  border: 5px groove white;
+  padding: 20px;
 }
 
 #aboutdetail ul{
-	margin-top:5%;
-	font-size:150%;
+  list-style-type: none;
+	margin-top: 5%;
+}
+
+#aboutdetail li{
+  margin: 1% 5%;
+}
+
+li.about_name {
+  text-align: center;
+  font-size: 200%;
+}
+
+li.about_age {
+  text-align: right;
+  font-family: Arial, sans-serif;
+  font-size: 150%;
+}
+
+li.about_course {
+  color: rgb(255, 0, 0);
+  font-size: 150%;
+}
+
+li.about_contribution {
+  text-align: center;
+  font-size: 150%;
+}
+
+#aboutdetail table, #aboutdetail th, #aboutdetail td {
+  border: 1px solid white;
+  font-size: 85%;
+}
+
+#aboutdetail table {
+  margin: auto;
+  width: 40%;
+}
+
+#aboutdetail th, #aboutdetail td {
+  background-color: #5555BB;
+  padding: 2%;
+}
+
+li.about_address {
+  text-align: center;
+  font-size: 150%;
+}
+
+.mapouter {
+  text-align:center;
+}
+
+.gmap_canvas {
+  overflow:hidden;
+  background:none!important;
+  height:500px;
+}
+
+li.about_personalinfo {
+  padding: 5% 10%;
+  clear: both;
+}
+
+.about_email {
+  text-align: center;
+  font-size: 150%;
 }
