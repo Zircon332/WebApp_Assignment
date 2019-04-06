@@ -79,6 +79,7 @@ a:visited {
   color: lightblue;
 }
 
+/*CSS for nav bar*/
 nav {
   width: 100%;
   margin: auto;
@@ -119,12 +120,27 @@ nav ul li ul li {
   padding: 0.3em;
 }
 
+#productlist{
+	color:lightblue;
+}
+
+#productlist::after{
+	content: '\25bc';
+	color: #e5bd4e;
+}
+
+
 nav ul li ul li a{
   padding: .2em .3em;
 }
 
 nav ul li ul li a:hover{
   background: #444444;
+}
+
+nav ul li ul li a:hover::after{
+	content:'\00bb';
+	color: #e5bd4e;
 }
 
 @media only screen and (max-width: 800px) {
@@ -539,6 +555,7 @@ ol li table th, ol li table td{
 /* ############### ENQUIRY ############### */
 /* css in enquiry.html specifically */
 
+/*CSS for form and inputs*/
 .space_bottom {
   margin-bottom: 1em;
 }
@@ -631,6 +648,7 @@ textarea {
   margin: 2%;
 }
 
+/*CSS for submit and reset buttons*/
 .form_button {
   text-align: right;
   height: 3em;
@@ -664,7 +682,7 @@ input[type=reset]:hover, input[type=submit]:hover {
     margin-left: 8%;
     width: 52%;
   }
-
+/*CSS for side info*/
   #enquiryside{
     float: left;
     width: 18%;
@@ -689,8 +707,8 @@ input[type=reset]:hover, input[type=submit]:hover {
 	display:grid;
 	grid-template-columns:23% 23% 23% 23%;
 	margin-left:8%;
-	margin-top:7%;
-	margin-bottom:10%;
+	margin-top:12%;
+	margin-bottom:14%;
 }
 
 #about1{
