@@ -728,7 +728,7 @@ li.about_name {
   font-size: 200%;
 }
 
-li.about_age {
+li.about_id {
   text-align: right;
   font-family: Arial, sans-serif;
   font-size: 150%;
@@ -737,11 +737,13 @@ li.about_age {
 li.about_course {
   color: rgb(255, 0, 0);
   font-size: 150%;
+  text-align: right;
 }
 
-li.about_contribution {
+.about_contribution {
   text-align: center;
   font-size: 150%;
+  margin-bottom:5%;
 }
 
 #aboutdetail table, #aboutdetail th, #aboutdetail td {
@@ -783,3 +785,8 @@ li.about_personalinfo {
   text-align: center;
   font-size: 150%;
 }
+
+.mailabout{
+	text-align:center;
+}
+	
