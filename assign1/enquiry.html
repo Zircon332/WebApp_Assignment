@@ -40,6 +40,7 @@
     </div>
 
     <section>
+        <h2>ENQUIRY</h2>
         <p class="space_bottom">Welcome to the <strong>enquiry page</strong>. This is where you place your booking for renting an instrument.</p>
         <hr />
         <p class="space_bottom">Haven't decided on an instrument yet? <a href="index.html#textinfo">Click here to check them out.</a></p>
@@ -89,7 +90,8 @@
                     </tr>
                     <tr>
                         <td><label for="state">State: </label></td>
-                        <td><select id="state" name="state" required="Required">
+                        <td><select id="state" name="state" required>
+                              <option value="">Choose</option>
                                 <optgroup label="States">
                                     <option value="johor" selected="selected">Johor</option>
                                     <option value="kedah">Kedah</option>
@@ -115,7 +117,7 @@
                     </tr>
                     <tr>
                         <td><label for="postcode">Postcode: </label></td>
-                        <td><input type="text" id="postcode" name="postcode" required="Required" pattern="[0-9]{5}" maxlength="5" size="5" placeholder="12345" required="Required" /></td>
+                        <td><input type="text" id="postcode" name="postcode" pattern="[0-9]{5}" maxlength="5" size="5" placeholder="12345" required="Required" /></td>
                     </tr>
                 </table>
             </fieldset>
@@ -125,7 +127,9 @@
                 <table>
                     <tr>
                         <td><label for="product">Product: </label></td>
-                        <td><select id="product" name="product" required="Required">
+                        <td>
+                            <select id="product" name="product" required="Required">
+                              <option value="">Choose</option>
                                 <optgroup label="Guitar">
                                     <option value="guitar" selected="selected">Guitar</option>
                                     <option value="drum">Drum</option>
@@ -133,19 +137,19 @@
                                     <option value="violin">Violin</option>
                                 </optgroup>
                                 <optgroup label="Drum">
-                                    <option value="guitar" selected="selected">Guitar</option>
+                                    <option value="guitar">Guitar</option>
                                     <option value="drum">Drum</option>
                                     <option value="piano">Piano</option>
                                     <option value="violin">Violin</option>
                                 </optgroup>
                                 <optgroup label="Piano">
-                                    <option value="guitar" selected="selected">Guitar</option>
+                                    <option value="guitar">Guitar</option>
                                     <option value="drum">Drum</option>
                                     <option value="piano">Piano</option>
                                     <option value="violin">Violin</option>
                                 </optgroup>
                                 <optgroup label="Violin">
-                                    <option value="guitar" selected="selected">Guitar</option>
+                                    <option value="guitar">Guitar</option>
                                     <option value="drum">Drum</option>
                                     <option value="piano">Piano</option>
                                     <option value="violin">Violin</option>
@@ -155,7 +159,7 @@
                     </tr>
                     <tr>
                         <td><label for="duration">Rental duration: </label></td>
-                        <td><input type="number" id="duration" name="duration" required="Required" size="5" placeholder="XX" />months</td>
+                        <td><input type="number" id="duration" name="duration" required size="5" placeholder="XX" />months</td>
                     </tr>
                 </table>
             </fieldset>
@@ -203,8 +207,8 @@
             <div id='footer_item_5'>
                 <h2>Contact us</h2>
                 <p><a href="www.facebook.com">Facebook</a></p>
-                <p><a href="mailto:Rentone@gmail.com">Email us</p>
-                <p><a href="tel: +60123456789">Phone Us</a></p>
+                <p><a href="mailto:Rentone@gmail.com">Email us</a></p>
+                <p><a href="tel:+60123456789">Phone Us</a></p>
             </div>
         </div>
         <p class="footer_copyright">All rights reserved 2019| &copy; Team Easier To Remember</p>
