@@ -272,7 +272,7 @@ footer p{
 #menu{
 	display:grid;
 	grid-template-columns: 25% 25% 25% 25%;
-  margin-bottom: 10%;
+	margin-bottom: 10%;
 }
 
 #cat1{
@@ -319,7 +319,7 @@ footer p{
 #about{
 	background-color: #1e1e1e;
 	padding:2%;
-  margin-bottom: 10%;
+	margin-bottom: 10%;
 }
 
 #about h1{
@@ -450,14 +450,13 @@ ol li table th, ol li table td{
 }
 
 .ppdesc{
-	margin-left:3%;
-	margin-right:3%;
+	margin: 4% 3% 4% 3%;
 }
 
 .productcontainer1{
 	display:grid;
 	grid-template-columns: 30% 30% 30%;
-  grid-column-gap: 5%;
+	grid-column-gap: 5%;
 	margin: 1% 10%;
 }
 
