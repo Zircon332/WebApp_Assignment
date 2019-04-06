@@ -518,6 +518,16 @@ ol li table th, ol li table td{
 /* ############## DISCLAIMER ############## */
 /* css in disclaimer.html specifically */
 
+#disclaimerCont{
+	margin:5%;
+	padding:2%;
+	font-size:130%;
+}
+
+#disclaimerCont h1{
+	text-align:center;
+	margin-bottom:2%;
+}
 
 /* ############### ENQUIRY ############### */
 /* css in enquiry.html specifically */
@@ -781,7 +791,7 @@ li.about_course {
 .about_personalinfo {
   padding: 5% 15%;
   text-align:left;
-  width:40%;
+  width:60%;
   margin-right:0;
 }
 
