@@ -254,17 +254,17 @@ footer p{
 	margin:0;
 }
 
-.textinfo{
+#textinfo{
 	text-align: center;
 	margin: 10% 8% 10%;
 }
 
-.textinfo p{
+#textinfo p{
 	color: white;
 	font-size:120%;
 }
 
-.textinfo h2{
+#textinfo h2{
 	color:#ffd257;
 	font-size:220%;
 }
