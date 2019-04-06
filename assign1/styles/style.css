@@ -84,7 +84,7 @@ nav {
   margin: auto;
   display: block;
   text-align: center;
-	height: 4.8em;
+  height: 4.8em;
 }
 
 nav li {
@@ -98,7 +98,7 @@ nav li {
 nav li a{
   padding: .8em;
 }
-
+	
 /* Drop-down menu for nav bar */
 nav ul li ul{
   width: 100%;
@@ -160,7 +160,7 @@ footer p{
 
 .footer_grid{
   display: grid;
-  background-color: #e5bd4e;
+  background-color: #dfad22;
   padding: 1% 10% .5%;
   grid-template-columns: 13% 33% 18% 18% 18%;
 }
@@ -261,7 +261,7 @@ footer p{
 #menu{
 	display:grid;
 	grid-template-columns: 23% 23% 23% 23%;
-	margin: 10% 0 10% 6%;
+	margin: 12% 0 10% 6%;
 }
 
 #cat1{
@@ -378,12 +378,14 @@ footer p{
 	right: 0;
 }
 
-.video{
+.audio{
    text-align: center;
-    margin-top: 5%;
-    margin-bottom: 5%;
 }
 
+.audio h2{
+	color:#e5bd4e;
+	font-size:220%;
+}
 
 
 /* ############### PRODUCT ############### */
@@ -717,7 +719,6 @@ input[type=reset]:hover, input[type=submit]:hover {
 	border: 5px groove white;
 	padding: 20px;
 }
-
 #aboutdetail ul{
   list-style-type: none;
 	margin-top: 5%;
