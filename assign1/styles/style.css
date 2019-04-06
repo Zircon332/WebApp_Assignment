@@ -784,6 +784,7 @@ li.about_course {
     scroll-behavior: smooth;
     margin: 0 0;
 }
+
 .gmap_canvas {
   overflow:hidden;
   background:none!important;
@@ -801,8 +802,6 @@ li.about_course {
 	text-align:left;
 }
 
-
-
 .about_email {
   text-align: center;
   font-size: 150%;
@@ -810,4 +809,10 @@ li.about_course {
 
 .mailabout{
 	text-align:center;
+}
+
+/* ############### ENQUIRY ############### */
+/* css in enquiry.html specifically */
+.enhancements {
+  margin: 5% 10%;
 }
