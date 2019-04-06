@@ -37,18 +37,6 @@ h2{
   background-image: url(image/banner2.jpg);
 }
 
-section {
-  text-align: center;
-  margin: 2% 10%;
-}
-
-aside {
-  border-radius: .8em;
-  border: 1px solid #00BFFF;
-  margin: 1% 10% 2%;
-  padding: 2% 4%;
-}
-
 hr {
   border: none;
   border-bottom: 1px solid white;
@@ -296,6 +284,10 @@ footer p{
   overflow: hidden;
 }
 
+#cat1 img, #cat2 img, #cat3 img, #cat4 img{
+  width: 100%;
+}
+
 #cat1 h2, #cat2 h2, #cat3 h2, #cat4 h2{
 	top:70%;
 	left:30%;
@@ -323,29 +315,29 @@ footer p{
 }
 
 #about h1{
-	padding-bottom:1%;
-	text-align:center;
-	color:#ffd257;
+	padding-bottom: 1%;
+	text-align: center;
+	color: #ffd257;
 }
 
 #about table th, #about table td{
-	padding:20px;
+	padding: 20px;
 	color: white;
-	font-size:120%;
-	text-align:center;
+	font-size: 120%;
+	text-align: center;
 }
 
 #about table th{
-	padding-bottom:1%;
-	font-size:180%;
+	padding-bottom: 1%;
+	font-size: 180%;
 }
 
 #homeenq{
-	text-align:center;
-	background-color:#e5bd4e;
-	border:1px solid black;
-	margin:2% 2% 5%;
-	border-radius:1em;
+	text-align: center;
+	background-color: #e5bd4e;
+	border: 1px solid black;
+	margin: 2% 2% 5%;
+	border-radius: 1em;
 }
 
 .button {
@@ -385,7 +377,6 @@ footer p{
 	opacity: 1;
 	right: 0;
 }
-
 
 
 
@@ -529,6 +520,18 @@ ol li table th, ol li table td{
   margin: 4em 5% 0;
 }
 
+section.form {
+  text-align: center;
+  margin: 2% 5%;
+}
+
+aside.form {
+  border-radius: .8em;
+  border: 1px solid #00BFFF;
+  margin: 1% 10% 2%;
+  padding: 2% 4%;
+}
+
 form {
   margin: 0 1% 0;
   padding: 0 9% 5%;
@@ -645,7 +648,7 @@ input[type=reset]:hover, input[type=submit]:hover {
     width: 52%;
   }
 
-  aside {
+  aside.form {
     float: left;
     width: 18%;
     margin: 0;
