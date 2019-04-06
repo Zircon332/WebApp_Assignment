@@ -149,6 +149,8 @@ nav ul li ul li a:hover{
   }
 }
 
+/*CSS for footer*/
+
 footer h2{
   text-align: left;
   margin: 5% 4%;
@@ -258,6 +260,7 @@ footer p{
 	font-size:220%;
 }
 
+/*CSS for instrument display*/
 #menu{
 	display:grid;
 	grid-template-columns: 23% 23% 23% 23%;
@@ -305,6 +308,7 @@ footer p{
 	opacity:0.5;
 }
 
+/*CSS for about Rentone*/
 #about{
 	background-color: #1e1e1e;
 	padding:2%;
@@ -330,6 +334,8 @@ footer p{
 	padding-bottom:1%;
 	font-size:180%;
 }
+
+/*CSS for button*/
 
 #homeenq{
 	text-align:center;
@@ -378,6 +384,7 @@ footer p{
 	right: 0;
 }
 
+/*CSS for audio*/
 #audio{
    text-align: center;
 }
@@ -390,6 +397,8 @@ footer p{
 
 /* ############### PRODUCT ############### */
 /* css in product.html specifically */
+
+/*CSS for individual product pages*/
 .thumbnails{
     border: 1px solid #ddd;
     border-radius: 4px;
@@ -448,6 +457,7 @@ ol li table th, ol li table td{
   padding: .5em;
 }
 
+/*CSS for product display layout*/
 .ppdesc{
 	margin: 4% 3% 4% 3%;
 }
@@ -474,7 +484,7 @@ ol li table th, ol li table td{
 .productcontainer2{
 	display:grid;
 	grid-template-columns: 45% 45%;
-  grid-column-gap: 5%;
+	grid-column-gap: 5%;
 	margin: 1% 24%;
 }
 
@@ -487,13 +497,14 @@ ol li table th, ol li table td{
 }
 
 .cont6{
-  grid-column: 3;
+	grid-column: 3;
 }
 
+/*CSS for image and word effects*/
 .cont1, .cont2, .cont3, .cont4, .cont5, .cont6{
 	text-align:center;
 	position:relative;
-  overflow: hidden;
+	overflow: hidden;
 }
 
 .cont1 h2, .cont2 h2, .cont3 h2, .cont4 h2, .cont5 h2, .cont6 h2{
@@ -504,7 +515,7 @@ ol li table th, ol li table td{
 	color:#ffd257;
 	position:absolute;
 	font-size: 220%;
-  text-shadow: 1px 1px 2px #000000;
+	text-shadow: 1px 1px 2px #000000;
 }
 
 .cont1:hover img, .cont2:hover img, .cont3:hover img, .cont4:hover img, .cont5:hover img, .cont6:hover img{
@@ -672,6 +683,8 @@ input[type=reset]:hover, input[type=submit]:hover {
 /* ############### ABOUTUS ############### */
 /* css in aboutus.html specifically */
 
+
+/*CSS for page layout*/
 .aboutcontainer{
 	display:grid;
 	grid-template-columns:23% 23% 23% 23%;
@@ -712,6 +725,7 @@ input[type=reset]:hover, input[type=submit]:hover {
 /* ############### ABOUTME ############### */
 /* css in aboutme.html specifically */
 
+/*CSS for image*/
 #aboutimg{
 	margin: 5%;
 	text-align: center;
@@ -719,8 +733,10 @@ input[type=reset]:hover, input[type=submit]:hover {
 	border: 5px groove white;
 	padding: 20px;
 }
+
+/*CSS for info*/
 #aboutdetail ul{
-  list-style-type: none;
+	list-style-type: none;
 	margin-top: 5%;
 }
 
@@ -767,6 +783,7 @@ li.about_course {
   padding: 2%;
 }
 
+/*CSS for embedded google address*/
 #about_address {
   text-align: center;
   font-size: 150%;
