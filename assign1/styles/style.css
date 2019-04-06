@@ -378,7 +378,7 @@ footer p{
 	right: 0;
 }
 
-.video{
+.audio{
    text-align: center;
 }
 
@@ -719,7 +719,6 @@ input[type=reset]:hover, input[type=submit]:hover {
 	border: 5px groove white;
 	padding: 20px;
 }
-
 #aboutdetail ul{
   list-style-type: none;
 	margin-top: 5%;
