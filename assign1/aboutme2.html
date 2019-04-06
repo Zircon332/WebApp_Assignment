@@ -2,52 +2,64 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8" />
-    <meta name="author" content="Wong Jun Jie, Wong Kah Heng, Joel Yeong, Ryan" />
-    <meta name="description" content="" />
-    <meta name="keywords" content="" />
-    <title>About Us|Rentone</title>
-    <link rel="stylesheet" type="text/css" href="styles/style.css">
+  <title>Home|Rentone</title>
+  <meta charset="utf-8" />
+  <meta name="author" content="Ryan Yap, Wong Kah Heng, Joel Yong, Wong Jun Jie" />
+  <meta name="description" content="The about page of" />
+  <meta name="keywords" content="rent, instruments, online ordering" />
+  <link rel="stylesheet" type="text/css" href="styles/style.css" />
 </head>
 
 <body>
-    <header>
-        <div id="logo">
-            <img src="image/logo.gif" alt="logo" />
-        </div>
-    </header>
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="#">Products</a>
-                <ul>
-                    <li><a href="product1.html">Brass</a></li>
-                    <li><a href="product2.html">Strings</a></li>
-                    <li><a href="product3.html">Woodwind</a></li>
-                    <li><a href="product4.html">Percussion</a></li>
-                </ul>
-            </li>
-            <li><a href="enquiry.html">Enquiry</a></li>
-            <li><a href="disclaimer.html">Disclaimer</a></li>
-        </ul>
-    </nav>
-    <div id="banner">
-        <!-- <div id="banner_text">
-            <h1>Enquiry</h1>
-            <p></p>
-            <a></a>
-          </div> -->
+  <header>
+    <div id="logo">
+      <img src="image/logo.gif" alt="logo" />
     </div>
-    <article>
-            <div id='aboutimg'>
-      <img src='image/woodwindabout.jpg' alt='developerImage'>
-    </div>
+  </header>
+  <nav>
+  	<ul>
+  		<li><a href="index.html">Home</a></li>
+  		<li><a href="#">Products</a>
+  			<ul>
+  				<li><a href="product1.html">Brass</a></li>
+  				<li><a href="product2.html">Strings</a></li>
+  				<li><a href="product3.html">Woodwind</a></li>
+  				<li><a href="product4.html">Percussion</a></li>
+  			</ul>
+  		</li>
+  		<li><a href="enquiry.html">Enquiry</a></li>
+  		<li><a href="disclaimer.html">Disclaimer</a></li>
+  	</ul>
+  </nav>
 
+  <div id="banner">
+  </div>
+
+  <article>
     <div id='aboutdetail'>
         <ul>
           <li class="about_name">Name: /Insert name/</li>
-          <li class="about_age">Age: /Insert age/</li>
+          <li id='aboutimg'>
+            <img src='image/woodwindabout.jpg' alt='developerImage'>
+          </li>
+          <li class="about_id">Student ID: /Insert studentID/</li>
           <li class="about_course">Course: /Insert course/</li>
+          <li class="about_personalinfo">
+            <h2>Personal Information:</h2>
+            <p>/could include: • Demographic information about you • Description of hometown • A list of your favourite books, music, films etc./
+              /could include: • Demographic information about you • Description of hometown • A list of your favourite books, music, films etc./
+              /could include: • Demographic information about you • Description of hometown • A list of your favourite books, music, films etc./
+              /could include: • Demographic information about you • Description of hometown • A list of your favourite books, music, films etc./</p>
+            <p>text text text text text text text text</p>
+          </li>
+          <li class="about_address">Address:
+            <!-- insert google map location here with whatsapp link -->
+            <div class="mapouter">
+              <div class="gmap_canvas">
+                <iframe width="600" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=kuching&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+              </div>
+            </div>
+          </li>
           <li class="about_contribution">Contribution:
             <table>
               <tr>
@@ -72,24 +84,14 @@
               </tr>
             </table>
           </li>
-          <li class="about_address">Address:
-            <!-- insert google map location here with whatsapp link -->
-            <div class="mapouter">
-              <div class="gmap_canvas">
-                <iframe width="600" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=kuching&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
-              </div>
-            </div>
-          </li>
-          <li class="about_personalinfo">
-            <h2>Personal Information:</h2>
-            <p>/could include: • Demographic information about you • Description of hometown • A list of your favourite books, music, films etc./</p>
-          </li>
         </ul>
-    </div>
-    </article>
-    <br>
-    <hr />
-    <footer>
+      </div>
+  </article>
+  <br>
+
+  <hr />
+  <footer>
+      <p class="about_email">Email: <a href="mailto:addUrEmail@here.com">/insert email/</a></p>
       <div class="footer_grid">
           <div id="footer_item_1">
               <img src="image/logo.gif" alt="logo" />
@@ -121,6 +123,8 @@
       </div>
       <p class="footer_copyright">All rights reserved 2019| &copy; Team Easier To Remember</p>
   </footer>
+
+
 </body>
 
 </html>
