@@ -766,7 +766,7 @@ li.about_course {
   padding: 2%;
 }
 
-.about_address {
+#about_address {
   text-align: center;
   font-size: 150%;
   float:right;
