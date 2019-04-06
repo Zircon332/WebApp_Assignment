@@ -23,7 +23,7 @@ body {
 }
 
 header {
-  background-color: #333333;
+  background-color: #e5bd4e;
 }
 
 h2{
@@ -160,9 +160,16 @@ footer p{
 
 .footer_grid{
   display: grid;
-  background-color: #333334;
+  background-color: #e5bd4e;
   padding: 1% 10% .5%;
   grid-template-columns: 13% 33% 18% 18% 18%;
+}
+.footer_grid h2, .footer_grid p{
+	color:black;
+}
+
+.footer_grid a{
+	color:white;
 }
 
 #footer_item_1 {
@@ -758,7 +765,7 @@ li.about_course {
   padding: 2%;
 }
 
-.about_address {
+#about_address {
   text-align: center;
   font-size: 150%;
   float:right;
