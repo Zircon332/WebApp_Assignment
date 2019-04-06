@@ -389,7 +389,11 @@ footer p{
 	opacity: 1;
 	right: 0;
 }
-
+.video{
+   text-align: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
 
 
 
