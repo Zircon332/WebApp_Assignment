@@ -271,8 +271,9 @@ footer p{
 
 #menu{
 	display:grid;
-	grid-template-columns: 25% 25% 25% 25%;
+	grid-template-columns: 23% 23% 23% 23%;
 	margin-bottom: 10%;
+	margin-left:6%;
 }
 
 #cat1{
