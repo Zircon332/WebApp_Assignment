@@ -98,7 +98,7 @@ nav li {
 nav li a{
   padding: .8em;
 }
-	
+
 /* Drop-down menu for nav bar */
 nav ul li ul{
   width: 100%;
@@ -378,11 +378,11 @@ footer p{
 	right: 0;
 }
 
-.audio{
+#audio{
    text-align: center;
 }
 
-.audio h2{
+#audio h2{
 	color:#e5bd4e;
 	font-size:220%;
 }
