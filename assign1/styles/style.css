@@ -702,7 +702,22 @@ input[type=reset]:hover, input[type=submit]:hover {
 
 /* ############### ABOUTME ############### */
 /* css in aboutme.html specifically */
-
+.thumbnailsabout{
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    width: 60%;
+    height: 60%;
+    margin: 10px;
+}
+.headingabout{
+    text-align: center;
+    text-decoration: underline;
+    color: goldenrod;
+}
+#abouttable{
+    margin: auto;
+}
 #aboutimg{
 	margin: 5%;
   text-align: center;
