@@ -707,7 +707,7 @@ input[type=reset]:hover, input[type=submit]:hover {
 /* css in aboutme.html specifically */
 
 #aboutimg{
-	margin: 5%;
+	margin: 0 10%;
   text-align: center;
 }
 
@@ -723,7 +723,7 @@ input[type=reset]:hover, input[type=submit]:hover {
 }
 
 #aboutdetail li{
-  margin: 1% 5%;
+  margin: 1% 10%;
 }
 
 li.about_name {
@@ -731,7 +731,7 @@ li.about_name {
   font-size: 200%;
 }
 
-li.about_age {
+li.about_stnumber {
   text-align: right;
   font-family: Arial, sans-serif;
   font-size: 150%;
@@ -754,7 +754,7 @@ li.about_contribution {
 
 #aboutdetail table {
   margin: auto;
-  width: 40%;
+  width: 60%;
 }
 
 #aboutdetail th, #aboutdetail td {
@@ -769,6 +769,7 @@ li.about_address {
 
 .mapouter {
   text-align:center;
+  margin-bottom: 10%;
 }
 
 .gmap_canvas {
