@@ -272,7 +272,7 @@ footer p{
 #menu{
 	display:grid;
 	grid-template-columns: 25% 25% 25% 25%;
-  margin-bottom: 10%;
+	margin-bottom: 10%;
 }
 
 #cat1{
@@ -319,7 +319,7 @@ footer p{
 #about{
 	background-color: #1e1e1e;
 	padding:2%;
-  margin-bottom: 10%;
+	margin-bottom: 10%;
 }
 
 #about h1{
