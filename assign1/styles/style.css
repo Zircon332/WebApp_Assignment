@@ -272,7 +272,7 @@ footer p{
 #menu{
 	display:grid;
 	grid-template-columns: 23% 23% 23% 23%;
-	margin-bottom: 10%;
+	margin-bottom: 6%;
 	margin-left:6%;
 }
 
@@ -320,13 +320,14 @@ footer p{
 #about{
 	background-color: #1e1e1e;
 	padding:2%;
-	margin-bottom: 10%;
+	margin-bottom: 7%;
 }
 
 #about h1{
 	padding-bottom:1%;
 	text-align:center;
 	color:#ffd257;
+	margin-bottom:3%;
 }
 
 #about table th, #about table td{
@@ -347,6 +348,7 @@ footer p{
 	border:1px solid black;
 	margin:2% 2% 5%;
 	border-radius:1em;
+	margin-bottom: 7%;
 }
 
 .button {
