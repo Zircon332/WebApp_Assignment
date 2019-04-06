@@ -6,7 +6,6 @@ last modified: 6/4/2019
 description: stylesheet for all rentone html pages
 */
 
-
 /* ############### MAIN ############### */
 /* css for elements found in all pages */
 
@@ -14,7 +13,6 @@ description: stylesheet for all rentone html pages
   font-family: Helvetica;
   color: white;
 }
-
 
 body {
   margin: 0;
