@@ -67,20 +67,16 @@
                 <th>Description</th>
               </tr>
               <tr>
-                <td>example.html</td>
-                <td>did the example with example</td>
+                <td>index.html</td>
+                <td>Edited content to have space for images and descriptions</td>
               </tr>
               <tr>
-                <td>something</td>
-                <td>did soemthing sumthin</td>
+                <td>nav bar with dropdown menu</td>
+                <td>Created navigation bar with a dropdown menu and customized it in the css.</td>
               </tr>
               <tr>
-                <td>something</td>
-                <td>did soemthing sumthin</td>
-              </tr>
-              <tr>
-                <td>something</td>
-                <td>did soemthing sumthin</td>
+                <td>Report</td>
+                <td>Created sitemap to show hierarchical structure of the website.</td>
               </tr>
             </table>
           </li>

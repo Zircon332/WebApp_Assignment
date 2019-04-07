@@ -65,20 +65,30 @@
                 <th>Description</th>
               </tr>
               <tr>
-                <td>example.html</td>
-                <td>did the example with example</td>
+                <td>index.html</td>
+                <td>Created content and links for index.html. Also created grid design <br>layout and gold colour based off banner colours. Created
+				<br> button and hover css effects. Resized images</td>
               </tr>
               <tr>
-                <td>something</td>
-                <td>did soemthing sumthin</td>
+                <td>Product Pages</td>
+                <td>Created grid layout and links for product pages. Added appropriate padding<br> and margin in CSS. Created hover effects. Resized images
+				<br> for product pages.</td>
               </tr>
               <tr>
-                <td>something</td>
-                <td>did soemthing sumthin</td>
+                <td>aboutus.html</td>
+                <td>Created grid layout and CSS for aboutus.html. Resized images.</td>
               </tr>
               <tr>
-                <td>something</td>
-                <td>did soemthing sumthin</td>
+                <td>aboutme pages</td>
+                <td>Created content for about me page. Added CSS for design layout.</td>
+              </tr>
+			  <tr>
+                <td>Disclaimer page</td>
+                <td>Added content for disclaimer page.</td>
+              </tr>
+			  <tr>
+                <td>header and footer</td>
+                <td>Added CSS enhancement effects for products in nav bar. Created <br>facebook account for link in footer. Adjusted links</td>
               </tr>
             </table>
           </li>
