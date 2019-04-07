@@ -2,10 +2,10 @@
 <html lang="en">
 
 <head>
-    <title>String|Rentone</title>
+    <title>Home|Rentone</title>
     <meta charset="utf-8" />
     <meta name="author" content="Ryan Yap, Wong Kah Heng, Joel Yong, Wong Jun Jie" />
-    <meta name="description" content="The String Product Page" />
+    <meta name="description" content="The Enchancement Page" />
     <meta name="keywords" content="rent, instruments, online ordering" />
     <link rel="stylesheet" type="text/css" href="styles/style.css" />
 </head>
@@ -35,55 +35,29 @@
     <div id="banner">
     </div>
 
-    <hr />
-    <article>
-		<div class='ppdesc'>
-			<h1>String Family</h1>
-			<p>Prehaps the most famous family in an orchestra, instruments from the string family are usually made of wood and of coursre, string. They are played by either plucking, bowing or even strumming. String instruments could be the most highly practiced family of instrument throughouut the world, or a close second, just behind the piano.The family includes guitars, cellos, violas and violins. To learn more click <a href="https://www.orsymphony.org/learning-community/instruments/strings/" target="_blank">HERE</a>.</p>
-        </div>
-		<h2>String Instruments</h2>
-		<br />
-		<br />
-        <div class='productcontainer1'>
-            <div class='cont1'>
-                <a href="product2_1.html">
-                    <img src="image/FX310AII.jpg" alt="FX310AII" /> <!-- image source: https://my.yamaha.com/en/products/musical_instruments/guitars_basses/ac_guitars/f_fx/index.html -->
-                    <h2>FX310AII</h2>
-                </a>
-            </div>
-            <div class='cont2'>
-                <a href="product2_2.html">
-                    <img src="image/KA-15S.jpg" alt="KA-15s" /> <!-- image source: https://kalabrand.com/collections/ka-15-series/products/ka-15s -->
-                    <h2>KA-15S</h2>
-                </a>
-            </div>
-            <div class='cont3'>
-                <a href="image/SV-600.jpg">
-                    <img src="image/SV-600.jpg" alt="SV-600" /> <!-- image source: https://violacentral.com/d-z-strad-viola-model-101-review/ -->
-                    <h2>SV-600</h2>
-                </a>
-            </div>
-        </div>
-        <div class='productcontainer2'>
-            <div class='cont4'>
-                <a href="image/CCO-500.jpg">
-                    <img src="image/CCO-500.jpg" alt="CCO-500" /> <!-- image source: https://www.amazon.com/dp/B007OOUZA0/ref=as_li_ss_tl?ie=UTF8&linkCode=sl1&tag=consordini-20&linkId=633c3f180cf5170809a44eb67207da37 -->
-                    <h2>CC0-550</h2>
-                </a>
-            </div>
-            <div class='cont5'>
-                <a href="image/SVA-175.png">
-                    <img src="image/SVA-175.png" alt="SVA-175" /> <!-- image source: https://www.guitarcenter.com/Cremona/SVA-175-Premier-Student-Series-Viola-Outfit.gc -->
-                    <h2>SVA-175</h2>
-                </a>
-            </div>
-		</div>
-		<br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
+    <article class="enhancements">
+        <h2>List of enhancements</h2>
+        <ol>
+            <li>Embedding External Content in aboutme pages. <a href="aboutme3.html#about_address">link to enhancement (aboutme1.html)</a>
+              <p>The maps makes use of iframes, an element tag that allows pages to display another page within it by using a url. To display the map with locations,
+                a url to google map's website with the location is used.</p>
+              <p>The maps links are found with the help of this website. <a href="https://www.embedgooglemap.net/" target='_blank'>https://www.embedgooglemap.net/</a></p>
+            </li>
+            <li>Audio in index using audio element tag. <a href="index.html#audio">link to enhancement (index.html)</a>
+              <p>The audio tag is a html5 element tag not covered in Labs. The audio tag links to a downloaded audio in the audio file, which can be played with the controls from the tag.
+                The audio helps motivate and interest people into learning to play musical intruments or start playing them again, or generally for the users to have a better experience and
+                leave a stronger impression on the website.</p>
+            </li>
+            <li>CSS grids to layout elements. <a href="product1.html">link to enhancement (product1.html)</a>
+              <p>The products are layouted with grids within only css. This gives more control over how each inline-block elements are positioned under a grid container without having to change
+                the html file as often, while being fluid as the page scales. Similar layouts were used in index, aboutus, and throughout the product pages in place of html tables.
+                This was not covered in Labs.</p>
+            </li>
+            <li>CSS properties or selectors not taught in tutorials. <a href="#productlist">link to enhancement (nav bar)</a>
+			  <p>The CSS selector ::after was used in the nav bar on every page to add and customise symbols and content after 'product' of the nav bar, and after every drop down product option.
+			  The ::after selector adds content after every reiteration of the selected element. This selector was not covered in Labs.</p>
+			</li>     
+        </ol>
     </article>
 
     <hr />
@@ -119,6 +93,7 @@
         </div>
         <p class="footer_copyright">All rights reserved 2019| &copy; Team Easier To Remember</p>
     </footer>
+
 
 </body>
 
