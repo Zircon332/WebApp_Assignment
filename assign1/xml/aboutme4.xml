@@ -48,7 +48,7 @@
             <!-- insert google map location here with https://www.embedgooglemap.net/ -->
             <div class="mapouter">
               <div class="gmap_canvas">
-                <iframe id="mapframe" src="https://maps.google.com/maps?q=100%2C%20Lorong%202A1%2C%20Jalan%20Urat%20Mata%2C%20Tabuan%20Jaya%2C%2093350%20Kuching%2C%20Sarawak&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe>
+                <iframe id="mapframe" src="https://maps.google.com/maps?q=100%2C%20Lorong%202A1%2C%20Jalan%20Urat%20Mata%2C%20Tabuan%20Jaya%2C%2093350%20Kuching%2C%20Sarawak&amp;t=&amp;z=13&amp;ie=UTF8&amp;iwloc=&amp;output=embed"></iframe>
               </div>
             </div>
           </li>
