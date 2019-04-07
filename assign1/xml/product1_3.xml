@@ -37,7 +37,7 @@
     <hr />
     <article>
         <section class="borderit">
-            <p class="forblock"><img class="thumbnails" src="image/YSL-354.jpg" alt="YSL-354"></p>
+            <p class="forblock"><img class="thumbnails" src="image/YSL-354.jpg" alt="YSL-354"/></p>
             <ol>
                 <li>Description
                     <p>The YSL-354 is a student grade Tenor trombone that is designed for beginner students to sound good, and as quickly as they can, instilling confidence into the student to play centre stage when called upon. The standard student models are durable, for the untrained hand to easily play without spoiling it, and of high quality, produced by Yamaha's own craftspeople with similar specifications as their performance models. Every single instrument is tested and inspected by experts and performers, to make sure they are 1&#41; Easier for beginners to play without losing out on quality and 2&#41; Able to be used in performances without hindering the pieces played.</p>
@@ -115,7 +115,7 @@
                 <p><a href="tel:+60123456789">Phone Us</a></p>
             </div>
 		</div>
-        <p class="footer_copyright">All rights reserved 2019| &copy; Team Easier To Remember</p>
+        <p class="footer_copyright">All rights reserved 2019| &#169; Team Easier To Remember</p>
     </footer>
 </body>
 
