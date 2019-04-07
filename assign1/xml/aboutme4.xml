@@ -38,12 +38,12 @@
   <article>
     <div id='aboutdetail'>
         <ul>
-          <li class="about_name">Name: </li>
+          <li class="about_name">Name: Joel Yeong Wai Hoe</li>
           <li id='aboutimg'>
-            <img src='image/woodwindabout.jpg' alt='developerImage' />
+            <img src='image/JoelYeong.jpg' alt='developerImage' />
           </li>
-          <li class="about_id">Student ID: </li>
-          <li class="about_course">Course: </li>
+          <li class="about_id">Student ID: 100087003</li>
+          <li class="about_course">Course: Bachelor of Information and Communication Technology</li>
 		  <li id="about_address">Address:
             <!-- insert google map location here with https://www.embedgooglemap.net/ -->
             <div class="mapouter">
@@ -54,11 +54,9 @@
           </li>
           <li class="about_personalinfo">
             <h2>Personal Information:</h2>
-            <p>/could include: • Demographic information about you • Description of hometown • A list of your favourite books, music, films etc./
-              /could include: • Demographic information about you • Description of hometown • A list of your favourite books, music, films etc./
-              /could include: • Demographic information about you • Description of hometown • A list of your favourite books, music, films etc./
-              /could include: • Demographic information about you • Description of hometown • A list of your favourite books, music, films etc./</p>
-            <p>text text text text text text text text</p>
+            <p>My name is Joel Yeong Wai Hoe. I am 22 years old and currently enrolled in Bachelors of Communication and Technology at Swinburne University Of Technology Sarawak.
+            Born and raised in Kuching, I have found a hobby in indulging in the various foods and drinks that are offered throughout the city. Other than food, I enjoy playing video games
+          and participating in sports. A particular goal of mine would be to be involved in big projects mainly in the IT field that can bring major innovative changes to Kuching.</p>
           </li>
           <li class="about_contribution">Contribution:
             <table>
