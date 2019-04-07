@@ -90,7 +90,7 @@
                     </tr>
                     <tr>
                         <td><label for="state">State: </label></td>
-                        <td><select id="state" name="state" required>
+                        <td><select id="state" name="state" required='Required'>
                               <option value="">Choose</option>
                                 <optgroup label="States">
                                     <option value="johor" selected="selected">Johor</option>
@@ -159,7 +159,7 @@
                     </tr>
                     <tr>
                         <td><label for="duration">Rental duration: </label></td>
-                        <td><input type="number" id="duration" name="duration" required size="5" placeholder="XX" />months</td>
+                        <td><input type="number" id="duration" name="duration" required='Required' size="5" placeholder="XX" />months</td>
                     </tr>
                 </table>
             </fieldset>
