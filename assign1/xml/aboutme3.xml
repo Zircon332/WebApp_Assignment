@@ -40,7 +40,7 @@
         <ul>
           <li class="about_name">Name: Ryan Yap</li>
           <li id='aboutimg'>
-            <img src='image/woodwindabout.jpg' alt='developerImage' />
+            <img src='image/Ryan.jpg' alt='developerImage' />
           </li>
           <li class="about_id">Student ID: 101215465</li>
           <li class="about_course">Course: Computer Science</li>

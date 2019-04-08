@@ -32,6 +32,11 @@
         </ul>
     </nav>
     <div id="banner">
+        <!-- <div id="banner_text">
+            <h1>Enquiry</h1>
+            <p></p>
+            <a></a>
+          </div> -->
     </div>
 
     <section>
@@ -85,7 +90,7 @@
                     </tr>
                     <tr>
                         <td><label for="state">State: </label></td>
-                        <td><select id="state" name="state" required>
+                        <td><select id="state" name="state" required='Required'>
                               <option value="">Choose</option>
                                 <optgroup label="States">
                                     <option value="johor" selected="selected">Johor</option>
@@ -125,42 +130,36 @@
                         <td>
                             <select id="product" name="product" required="Required">
                               <option value="">Choose</option>
-                                <optgroup label="Brass">
-                                    <option value="btr300" selected="selected">BTR300</option>
-                                    <option value="jp251sw">JP251SW</option>
-                                    <option value="ysl-354">YSL-354</option>
-                                    <option value="yhr-314ii">YHR-314II</option>
-                                    <option value="ype-202m">YEP-202M</option>
-                                    <option value="ymp-204ms">YMP-204MS</option>
+                                <optgroup label="Guitar">
+                                    <option value="guitar" selected="selected">Guitar</option>
+                                    <option value="drum">Drum</option>
+                                    <option value="piano">Piano</option>
+                                    <option value="violin">Violin</option>
                                 </optgroup>
-                                <optgroup label="Strings">
-                                    <option value="fx310aii">FX310AII</option>
-                                    <option value="ka-15s">KA-15S</option>
-                                    <option value="sv-600">SV-600</option>
-                                    <option value="cco-500">CCO-500</option>
-                                    <option value="sva-175">SVA-175</option>
+                                <optgroup label="Drum">
+                                    <option value="guitar">Guitar</option>
+                                    <option value="drum">Drum</option>
+                                    <option value="piano">Piano</option>
+                                    <option value="violin">Violin</option>
                                 </optgroup>
-                                <optgroup label="Woodwind">
-                                    <option value="efl-100">EFL-100</option>
-                                    <option value="ycl-200adii">YCL-200ADII</option>
-                                    <option value="yas-26">YAS-26</option>
-                                    <option value="yts-26">YTS-26</option>
-                                    <option value="ycl-650">YCL-650</option>
-                                    <option value="ypc-62">YPC-62</option>
+                                <optgroup label="Piano">
+                                    <option value="guitar">Guitar</option>
+                                    <option value="drum">Drum</option>
+                                    <option value="piano">Piano</option>
+                                    <option value="violin">Violin</option>
                                 </optgroup>
-                                <optgroup label="Percussion">
-                                    <option value="cb-840c">CB-840C</option>
-                                    <option value="cms">CMS</option>
-                                    <option value="ct-9000">CT-9000</option>
-                                    <option value="tp-4300r">TP-4300R</option>
-                                    <option value="yx-135">YX-135</option>
+                                <optgroup label="Violin">
+                                    <option value="guitar">Guitar</option>
+                                    <option value="drum">Drum</option>
+                                    <option value="piano">Piano</option>
+                                    <option value="violin">Violin</option>
                                 </optgroup>
                             </select>
                         </td>
                     </tr>
                     <tr>
                         <td><label for="duration">Rental duration: </label></td>
-                        <td><input type="number" id="duration" name="duration" required size="5" placeholder="XX" />months</td>
+                        <td><input type="number" id="duration" name="duration" required='Required' size="5" placeholder="XX" />months</td>
                     </tr>
                 </table>
             </fieldset>
@@ -212,7 +211,7 @@
                 <p><a href="tel:+60123456789">Phone Us</a></p>
             </div>
         </div>
-        <p class="footer_copyright">All rights reserved 2019| &copy; Team Easier To Remember</p>
+        <p class="footer_copyright">All rights reserved 2019| &#169; Team Easier To Remember</p>
     </footer>
 </body>
 
