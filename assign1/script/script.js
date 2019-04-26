@@ -7,13 +7,21 @@ Revisions:  [ your name, what, when…]                                         
 */
 
 
+
 // -----Data Transfer between Web pages----- //
 
-// [ Function description ]
+// Store 'subject' as session object
+function storeSubject (subject) {
+    sessionStorage.subject = subject;
 
+    alert("Subject: " + sessionStorage.subject);
+}
 
-
-
+// Get the name of the instrument from the product pages and store it
+function getSubject () {
+    subject = document.getElementById("subject").value;
+    storeSubject(subject);
+}
 
 
 
@@ -49,11 +57,25 @@ Revisions:  [ your name, what, when…]                                         
 
 // -----init----- //
 function init () {
-  // test if javascript is in pages
-  alert("Javascript active");
+    // test if javascript is in pages
+    alert("Javascript active");
 
-  // call data transfer function
 
+
+
+
+    // check which page is open
+    currentPage = window.location.pathname.substring(window.location.pathname.lastIndexOf('/') + 1);
+    alert("Page = " + currentPage);
+    /*
+        if(currentPage == "enquiry.html" ) {
+
+
+        }
+        else if(currentPage  == "index.html") {
+
+        }
+    */
 }
 
 
