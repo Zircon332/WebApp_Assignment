@@ -33,11 +33,6 @@
         </ul>
     </nav>
     <div id="banner">
-        <!-- <div id="banner_text">
-            <h1>Enquiry</h1>
-            <p></p>
-            <a></a>
-          </div> -->
     </div>
 
     <section>
@@ -58,6 +53,9 @@
             <h2>ENQUIRY</h2>
         </div>
         <form id="enquiry_form" enctype="text/plain" method="post" action="process.php">
+            <label for="subject">Subject: </label>
+            <input type="text" id="subject" name="subject" required="Required" maxlength="40" size="40" value="RE: Enquiry on [product name]" />
+
             <fieldset>
                 <legend>Personal Detail : </legend>
                 <table>
@@ -74,7 +72,6 @@
                         <td><label for="phone">Phone Number: </label></td>
                         <td><input type="tel" id="phone" name="phone" placeholder="121-1211111" required="Required" maxlength="10" size="10" /></td>
                     </tr>
-
                 </table>
             </fieldset>
 
