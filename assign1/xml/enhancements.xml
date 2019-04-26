@@ -8,6 +8,7 @@
     <meta name="description" content="The Enchancement Page" />
     <meta name="keywords" content="rent, instruments, online ordering" />
     <link rel="stylesheet" type="text/css" href="styles/style.css" />
+    <script src="script/script.js"></script>
 </head>
 
 <body>
@@ -56,7 +57,7 @@
             <li>CSS properties or selectors not taught in tutorials. <a href="#productlist">link to enhancement (nav bar)</a>
 			  <p>The CSS selector ::after was used in the nav bar on every page to add and customise symbols and content after 'product' of the nav bar, and after every drop down product option.
 			  The ::after selector adds content after every reiteration of the selected element. This selector was not covered in Labs.</p>
-			</li>     
+			</li>
         </ol>
     </article>
 
