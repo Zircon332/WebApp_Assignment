@@ -48,7 +48,18 @@ function getSubject () {
 // -----Populate drop-down list using Javascript----- //
 
 // [ Function description ]
-
+function drop_down() {
+	var select = document.getElementById('product');
+	var	options = ["BTR300", "JP251S", "YSL-354", "YHR-314II", "YEP-202M", "YMP-204MS"];
+	// loop to store options in array //
+	for (var i = 0; i < options.length; i++){
+		var opt = options[i];
+		var el = document.createElement('option');
+		el.textContent = opt;
+		el.value = opt;
+		select.appendChild(el);
+	}
+}
 
 
 
@@ -60,7 +71,7 @@ function init () {
     // test if javascript is in pages
     alert("Javascript active");
 
-
+	drop_down();
 
 
 
