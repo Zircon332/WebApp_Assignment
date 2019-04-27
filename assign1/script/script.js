@@ -13,13 +13,11 @@ Revisions:  [ your name, what, when…]                                         
 // Store 'subject' as session object
 function storeSubject (subject) {
     sessionStorage.subject = subject;
-
-    alert("Subject: " + sessionStorage.subject);
 }
 
 // Get the name of the instrument from the product pages and store it
-function getSubject () {
-    subject = document.getElementById("subject").value;
+function getSubject (subject) {
+    document.location = "enquiry.html";
     storeSubject(subject);
 }
 
@@ -71,22 +69,23 @@ function init () {
     // test if javascript is in pages
     alert("Javascript active");
 
-	drop_down();
+	  drop_down();
 
 
 
     // check which page is open
     currentPage = window.location.pathname.substring(window.location.pathname.lastIndexOf('/') + 1);
-    alert("Page = " + currentPage);
-    /*
         if(currentPage == "enquiry.html" ) {
-
-
+            if (sessionStorage.subject != null) {                                                           // if sessionStorage has a value (i.e if user came from the product page)
+                document.getElementById("subject").value = "RE: Enquiry on " + sessionStorage.subject;      // place sessionStorage.subject in Subject field in enquiry
+                sessionStorage.removeItem("subject");                                                       // remove sessionStorage.subject after it is used
+            } else {                                                                                        // if sessionStorage is empty (i.e if user didn't come from the product page)
+                document.getElementById("subject").value = "RE: Enquiry on [product name]";
+            }
         }
         else if(currentPage  == "index.html") {
 
         }
-    */
 }
 
 

@@ -538,6 +538,27 @@ ol li table th, ol li table td{
 	opacity:0.5;
 }
 
+/* css for enquiry button */
+.subject_cont {
+  text-align: center;
+  height: 4em;
+}
+
+#subject_button {
+  background-color: #00BFFF;
+  font-size: 1.1em;
+  border-radius: 1em;
+  border: 1px solid #00BFFF;
+  padding: .5em 1em;
+  transition: .5s;
+}
+
+#subject_button:hover {
+    background-color: #009FFF;
+    font-size: 1.2em;
+    transition: .5s;
+}
+
 /* ############## DISCLAIMER ############## */
 /* css in disclaimer.html specifically */
 
