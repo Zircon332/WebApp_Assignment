@@ -275,8 +275,7 @@ function init() {
 // function for data transfer within same page
 function data_transfer() {
   var s1 = document.getElementById("product").value;
-  sessionStorage.clear("subject");
-  document.getElementById("subject").innerHTML = "You selected" + s1;
+  document.getElementById("subject").value = s1;
 }
 
 window.onload = init;
