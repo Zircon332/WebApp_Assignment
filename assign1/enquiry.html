@@ -120,13 +120,14 @@
                 </table>
             </fieldset>
 
+
             <fieldset>
                 <legend>Rental : </legend>
                 <table>
                     <tr>
                         <td><label for="product">Product: </label></td>
                         <td>
-                            <select id="product" name="product" required="Required">
+                            <select id="product" name="product" required="Required" onchange="data_transfer()">
                               <option value="">Choose</option>
                             </select>
                         </td>
@@ -154,6 +155,7 @@
         <p>Email: <a href="mailto:Rentone@gmail.com">Rentone@gmail.com</a></p>
         <p>Phone: <a href="tel:+60123456789">0123456789</a></p>
     </aside>
+
 
     <footer>
         <div class="footer_grid">

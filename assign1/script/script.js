@@ -37,7 +37,7 @@ function getSubject(subject) {
 function checkSubject() {
   subject = document.getElementById("subject").value;
   let returnText = "";
-  if (subject == "") 
+  if (subject == "")
   {
     returnText += "Please enter a subject.\n";
   }
@@ -47,19 +47,19 @@ function checkSubject() {
 function checkFname() {
   name = document.getElementById("fname").value;
   let returnText = "";
-  if (name == "") 
+  if (name == "")
   {
     returnText += "Please enter your first name.\n";
   }
-  if (!name.match(/[a-zA-Z]+/)) 
+  if (!name.match(/[a-zA-Z]+/))
   {
     returnText += "Please enter a valid first name.\n";
   }
-  if (name.match(/[0-9]+/)) 
+  if (name.match(/[0-9]+/))
   {
     returnText += "No numbers allowed in names.\n";
   }
-  if (name.length > 25) 
+  if (name.length > 25)
   {
     returnText += "First name must not be more than 25 characters.\n";
   }
@@ -70,19 +70,19 @@ function checkFname() {
 function checkLname() {
   name = document.getElementById("lname").value;
   let returnText = "";
-  if (name == "") 
+  if (name == "")
   {
     returnText += "Please enter your last name.\n";
   }
-  if (!name.match(/[a-zA-Z]+/)) 
+  if (!name.match(/[a-zA-Z]+/))
   {
     returnText += "Please enter a valid last name.\n";
   }
-  if (name.match(/[0-9]+/)) 
+  if (name.match(/[0-9]+/))
   {
     returnText += "No numbers allowed in names.\n";
   }
-  if (name.length > 25) 
+  if (name.length > 25)
   {
     returnText += "Last name must not be more than 25 characters.\n";
   }
@@ -93,11 +93,11 @@ function checkLname() {
 function checkMail() {
   email = document.getElementById("email").value;
   let returnText = "";
-  if (email == "") 
+  if (email == "")
   {
     returnText += "Please enter your email address.\n";
   }
-  if (!email.match(/@/)) 
+  if (!email.match(/@/))
   {
     returnText += "Please enter a valid email address.\n";
   }
@@ -107,15 +107,15 @@ function checkMail() {
 function checkPhone() {
   phone = document.getElementById("phone").value;
   let returnText = "";
-  if (phone == "") 
+  if (phone == "")
   {
     returnText += "Please enter your phone number.\n";
   }
-  if (!phone.match(/[0-9]+/)) 
+  if (!phone.match(/[0-9]+/))
   {
     returnText += "Please enter a valid phone number.\n";
   }
-  if (phone.length > 10) 
+  if (phone.length > 10)
   {
     returnText += "Phone number must not be longer than 10 characters.\n";
   }
@@ -125,11 +125,11 @@ function checkPhone() {
 function checkStreet() {
   street = document.getElementById("street").value;
   let returnText = "";
-  if (street == "") 
+  if (street == "")
   {
     returnText += "Please enter your street name.\n";
   }
-  if (street.length > 40) 
+  if (street.length > 40)
   {
     returnText += "Street exceeded the number of 40 characters.\n";
   }
@@ -139,11 +139,11 @@ function checkStreet() {
 function checkCity() {
   city = document.getElementById("city").value;
   let returnText = "";
-  if (city == "") 
+  if (city == "")
   {
     returnText += "Please enter your city name.\n";
   }
-  if (city.length > 20) 
+  if (city.length > 20)
   {
     returnText += "City exceeded the number of 20 characters.\n";
   }
@@ -153,7 +153,7 @@ function checkCity() {
 function checkState() {
   state = document.getElementById("state").value;
   let returnText = "";
-  if (state == "") 
+  if (state == "")
   {
     returnText += "Please select a state.\n";
   }
@@ -163,15 +163,15 @@ function checkState() {
 function checkPC() {
   PC = document.getElementById("postcode").value;
   let returnText = "";
-  if (PC == "") 
+  if (PC == "")
   {
     returnText += "Please enter your postcode.\n";
   }
-  if (PC.length > 5) 
+  if (PC.length > 5)
   {
     returnText += "Postcode cannot exceed 5 characters.\n";
   }
-  if (PC.match(/[a-zA-Z]+/)) 
+  if (PC.match(/[a-zA-Z]+/))
   {
     returnText += "Please enter a valid postcode.\n";
   }
@@ -181,7 +181,7 @@ function checkPC() {
 function checkProduct() {
   product = document.getElementById("product").value;
   let returnText = "";
-  if (product == "") 
+  if (product == "")
   {
     returnText += "Please select a product.\n";
   }
@@ -272,5 +272,10 @@ function init() {
 
 }
 
+// function for data transfer within same page
+function data_transfer() {
+  var s1 = document.getElementById("product").value;
+  document.getElementById("subject").innerHTML = "You selected" + s1;
+}
 
 window.onload = init;
