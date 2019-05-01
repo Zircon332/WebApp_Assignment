@@ -261,17 +261,14 @@ function drop_downNav() {
 
 
 // -----init----- //
-function init() {
+function init(){
+  //drop down menu scripts//
+  drop_down();
+  drop_downNav();
   // test if javascript is in pages
   var clickme = document.getElementById("submit");
   clickme.onclick = checkForm;
   alert("Javascript active");
-
-  drop_down();
-  drop_downNav();
-
-
-
   // check which page is open
   currentPage = window.location.pathname.substring(window.location.pathname.lastIndexOf('/') + 1);
   if (currentPage == "enquiry.html") {
