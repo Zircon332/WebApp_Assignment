@@ -25,12 +25,11 @@ function getSubject(subject) {
 
 // -----Data transfer in the same page----- //
 
-// [ Function description ]
-
-
-
-
-
+// function for data transfer within same page
+function data_transfer() {
+  var s1 = document.getElementById("product").value;
+  document.getElementById("subject").value = "RE: Enquiry on " + s1;
+}
 
 
 // -----Data validation and input checking of Forms-----  //
@@ -218,11 +217,6 @@ function checkForm() {
 
   alert(alertText);
 }
-// [ Function description ]
-
-
-
-
 
 
 // -----Populate drop-down list using Javascript----- //
@@ -230,7 +224,7 @@ function checkForm() {
 // [ Function description ]
 function drop_down() {
   var select = document.getElementById('product');
-  var options = ["BTR300", "JP251S", "YSL-354", "YHR-314II", "YEP-202M", "YMP-204MS", "EFL-100", "YCL-200ADII", "YAS-26", "YTS-26", "YCL-650", "YPC-62", "CB-840C", "CMS-All Series Snare", "CT-9000 Series", 
+  var options = ["BTR300", "JP251S", "YSL-354", "YHR-314II", "YEP-202M", "YMP-204MS", "EFL-100", "YCL-200ADII", "YAS-26", "YTS-26", "YCL-650", "YPC-62", "CB-840C", "CMS-All Series Snare", "CT-9000 Series",
   "TP-4300R", "YX-135"];
   // loop to store options in array //
   for (var i = 0; i < options.length; i++) {
@@ -257,40 +251,32 @@ function drop_downNav() {
 
 
 
-
-
-
 // -----init----- //
 function init() {
-  // test if javascript is in pages
-  var clickme = document.getElementById("submit");
-  clickme.onclick = checkForm;
-  alert("Javascript active");
 
-  drop_down();
+  // drop down nav
   drop_downNav();
-
-
 
   // check which page is open
   currentPage = window.location.pathname.substring(window.location.pathname.lastIndexOf('/') + 1);
-  if (currentPage == "enquiry.html") {
-    if (sessionStorage.subject != null) { // if sessionStorage has a value (i.e if user came from the product page)
+  
+  if (currentPage == "enquiry.html") {        // if at enquiry.html
+    // input select drop
+    drop_down();
+
+    // check form when submit is pressed
+    var clickme = document.getElementById("submit");
+    clickme.onclick = checkForm;
+
+    // Insert instrument name in subject
+    if (sessionStorage.subject != null) {                                                    // if sessionStorage has a value (i.e if user came from the product page)
       document.getElementById("subject").value = "RE: Enquiry on " + sessionStorage.subject; // place sessionStorage.subject in Subject field in enquiry
-      sessionStorage.removeItem("subject"); // remove sessionStorage.subject after it is used
-    } else { // if sessionStorage is empty (i.e if user didn't come from the product page)
+      sessionStorage.removeItem("subject");                                                  // remove sessionStorage.subject after it is used
+    } else {                                                                                 // if sessionStorage is empty (i.e if user didn't come from the product page)
       document.getElementById("subject").value = "RE: Enquiry on [product name]";
     }
-  } else if (currentPage == "index.html") {
-
   }
-
 }
 
-// function for data transfer within same page
-function data_transfer() {
-  var s1 = document.getElementById("product").value;
-  document.getElementById("subject").value = s1;
-}
 
 window.onload = init;
