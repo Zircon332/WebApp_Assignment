@@ -86,6 +86,7 @@ nav {
   display: block;
   text-align: center;
   height: 4.8em;
+
 }
 
 nav li {
@@ -100,45 +101,59 @@ nav li a{
   padding: .8em;
 }
 
+nav option{
+	
+}
 /* Drop-down menu for nav bar */
-nav ul li ul{
-  width: 100%;
-  display: none;
-  position: absolute;
-  background-color: #333333;
-  padding: .2em;
+
+#navcont{
+	position:relative;
+	display:inline-block;
+	color:lightblue;
 }
 
-nav ul li:hover ul{
-  display: block;
-  z-index: 1;
+#productlist{
+	width: 100%;
+	
+	position: absolute;
+	background-color: #1e1e1e;
+	padding: .2em;
+
 }
 
-nav ul li ul li {
-  font-size: .8em;
-  border-radius: 40px;
-  padding: 0.3em;
+#productlist a{
+	display:none;
+}
+
+#navcont:hover a{
+	display: block;
+	z-index: 1;
+}
+
+#productlist a{
+	font-size: .8em;
+	border-radius: 40px;
+	padding: 0.3em;
 }
 
 #productlist{
 	color:lightblue;
 }
 
-#productlist::after{
+#navcont::after{
 	content: '\25bc';
 	color: #e5bd4e;
 }
 
 
-nav ul li ul li a{
+#productlist a{
   padding: .2em .3em;
 }
-
-nav ul li ul li a:hover{
+#productlist a:hover{
   background: #444444;
 }
 
-nav ul li ul li a:hover::after{
+#productlist a:hover::after{
 	content:'\00bb';
 	color: #e5bd4e;
 }
