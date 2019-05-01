@@ -230,13 +230,27 @@ function checkForm() {
 // [ Function description ]
 function drop_down() {
   var select = document.getElementById('product');
-  var options = ["BTR300", "JP251S", "YSL-354", "YHR-314II", "YEP-202M", "YMP-204MS"];
+  var options = ["BTR300", "JP251S", "YSL-354", "YHR-314II", "YEP-202M", "YMP-204MS", "EFL-100", "YCL-200ADII", "YAS-26", "YTS-26", "YCL-650", "YPC-62", "CB-840C", "CMS-All Series Snare", "CT-9000 Series", 
+  "TP-4300R", "YX-135"];
   // loop to store options in array //
   for (var i = 0; i < options.length; i++) {
     var opt = options[i];
     var el = document.createElement('option');
     el.textContent = opt;
     el.value = opt;
+    select.appendChild(el);
+  }
+}
+
+function drop_downNav() {
+  var select = document.getElementById('productlist');
+  var options = ["Brass", "String", "Woodwind", "Percussion"];
+  var links = ["product1.html", "product2.html", "product3.html", "product4.html"]
+  // loop to store options in array //
+  for (var i = 0; i < options.length; i++) {
+    var el = document.createElement('a');
+    el.textContent = options[i];
+    el.setAttribute('href' , links[i]);
     select.appendChild(el);
   }
 }
@@ -254,6 +268,7 @@ function init() {
   alert("Javascript active");
 
   drop_down();
+  drop_downNav();
 
 
 
