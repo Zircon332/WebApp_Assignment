@@ -21,6 +21,16 @@ function getSubject(subject) {
   storeSubject(subject);
 }
 
+// Insert instrument name in subject field
+function displaySubject() {
+  if (sessionStorage.subject != null) {                                                    // if sessionStorage has a value (i.e if user came from the product page)
+    document.getElementById("subject").value = "RE: Enquiry on " + sessionStorage.subject; // place sessionStorage.subject in Subject field in enquiry
+    sessionStorage.removeItem("subject");                                                  // remove sessionStorage.subject after it is used
+  } else {                                                                                 // if sessionStorage is empty (i.e if user didn't come from the product page)
+    document.getElementById("subject").value = "RE: Enquiry on [product name]";
+  }
+}
+
 
 
 // -----Data transfer in the same page----- //
@@ -96,9 +106,13 @@ function checkMail() {
   {
     returnText += "Please enter your email address.\n";
   }
-  if (!email.match(/@/))
+  if (!email.match(/@/))         // regex for "@"
   {
-    returnText += "Please enter a valid email address.\n";
+    returnText += "Please enter a valid email address (missing '@').\n";
+  }
+  if (!email.match(/.com$/))         // regex for ".com" at the end
+  {
+    returnText += "Please enter a valid email address (missing '.com' at the end).\n";
   }
   return (returnText);
 }
@@ -160,17 +174,17 @@ function checkState() {
 }
 
 function checkPC() {
-  PC = document.getElementById("postcode").value;
+  pc = document.getElementById("postcode").value;
   let returnText = "";
-  if (PC == "")
+  if (pc == "")
   {
     returnText += "Please enter your postcode.\n";
   }
-  if (PC.length > 5)
+  if (pc.length > 5)
   {
     returnText += "Postcode cannot exceed 5 characters.\n";
   }
-  if (PC.match(/[a-zA-Z]+/))
+  if (pc.match(/[a-zA-Z]+/))
   {
     returnText += "Please enter a valid postcode.\n";
   }
@@ -190,7 +204,7 @@ function checkProduct() {
 function checkDuration() {
   duration = document.getElementById("duration").value;
   let returnText = "";
-  if (duration = "")
+  if (duration == "")
   {
     returnText += "Please enter your rental duration.\n";
   }
@@ -216,6 +230,10 @@ function checkForm() {
   alertText += checkDuration();
 
   alert(alertText);
+
+  if (alertText == "") {
+    alert("There are no errors.");
+  }
 }
 
 
@@ -254,27 +272,18 @@ function drop_downNav() {
 // -----init----- //
 function init() {
 
-  // drop down nav
-  drop_downNav();
+  drop_downNav();                           // drop down nav
 
   // check which page is open
   currentPage = window.location.pathname.substring(window.location.pathname.lastIndexOf('/') + 1);
-  
-  if (currentPage == "enquiry.html") {        // if at enquiry.html
-    // input select drop
-    drop_down();
 
-    // check form when submit is pressed
+  if (currentPage == "enquiry.html") {      // if at enquiry.html
+    drop_down();                              // input select drop
+    displaySubject();                         // Insert instrument name in subject field
+
+    // validate form when submit is pressed
     var clickme = document.getElementById("submit");
     clickme.onclick = checkForm;
-
-    // Insert instrument name in subject
-    if (sessionStorage.subject != null) {                                                    // if sessionStorage has a value (i.e if user came from the product page)
-      document.getElementById("subject").value = "RE: Enquiry on " + sessionStorage.subject; // place sessionStorage.subject in Subject field in enquiry
-      sessionStorage.removeItem("subject");                                                  // remove sessionStorage.subject after it is used
-    } else {                                                                                 // if sessionStorage is empty (i.e if user didn't come from the product page)
-      document.getElementById("subject").value = "RE: Enquiry on [product name]";
-    }
   }
 }
 
