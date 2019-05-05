@@ -124,9 +124,9 @@ function checkPhone() {
   {
     returnText += "Please enter your phone number.\n";
   }
-  if (!phone.match(/[0-9]+/))
+  if (!phone.match(/^[0-9]+$/))
   {
-    returnText += "Please enter a valid phone number.\n";
+    returnText += "Phone number must contain numbers only.\n";
   }
   if (phone.length > 10)
   {
