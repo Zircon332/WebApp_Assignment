@@ -232,10 +232,23 @@ function checkForm() {
   alert(alertText);
 
   if (alertText == "") {
-    alert("There are no errors.");
-  }
+    var psubject = subject;
+	var pfname = document.forms["enquiry_form"]["fname"].value;
+	var plname = document.forms["enquiry_form"]["lname"].value;
+	var pmail = email;
+	var pphone = phone;
+	var pstreet = street;
+	var pcity = city;
+	var pstate = state;
+	var ppc = pc;
+	var pproduct = product;
+	var pduration = duration;
+	var comment = document.getElementById('comments').value;
+	/*enhancement for pop up data preview integrated into original js code*/
+    return confirm('Preview\nSubject: '+psubject+'\nFirst Name: '+pfname+'\nLast Name: '+plname+'\nEmail: '+pmail+'\nPhone: '+pphone+'\nStreet: '+pstreet+
+	'\nCity: '+pcity+'\nState: '+pstate+'\nPostal Code: '+ppc+'\nProduct: '+pproduct+'\nDuration: '+pduration+'\nComments: '+comment);
 }
-
+}
 
 // -----Populate drop-down list using Javascript----- //
 
@@ -267,13 +280,21 @@ function drop_downNav() {
   }
 }
 
+//slideshow
+var i = 0;
 
+function changeimage(){
+  document.getElementById("banner2").style.backgroundImage = "url(styles/image/banner" + (i++ % 6) + ".jpg)";
+}
+function slider(){
+  setInterval(changeimage, 3000);
+}
 
 // -----init----- //
 function init() {
 
   drop_downNav();                           // drop down nav
-
+  slider();
   // check which page is open
   currentPage = window.location.pathname.substring(window.location.pathname.lastIndexOf('/') + 1);
 

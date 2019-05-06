@@ -40,8 +40,12 @@ h2{
 
 #banner {
   height: 90vh;
-  background-image: url(image/banner2.jpg);
-  object-fit: cover;
+  background-image: url(image/banner0.jpg);
+}
+
+#banner2 {
+  height: 90vh;
+  background-image: url(styles/image/banner0.jpg);
 }
 
 section {
@@ -79,6 +83,7 @@ a:hover, a:active {
 a:visited {
   color: lightblue;
 }
+
 
 /*CSS for nav bar*/
 nav {
