@@ -271,7 +271,7 @@ function drop_downNav() {
 var i = 0;
 
 function changeimage(){
-  document.getElementById("banner").style.backgroundImage = "url(styles/image/banner" + (i++ % 6) + ".jpg)";
+  document.getElementById("banner2").style.backgroundImage = "url(styles/image/banner" + (i++ % 6) + ".jpg)";
 }
 function slider(){
   setInterval(changeimage, 3000);
