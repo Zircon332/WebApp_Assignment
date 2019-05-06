@@ -41,6 +41,7 @@ h2{
 #banner {
   height: 90vh;
   background-image: url(image/banner2.jpg);
+  object-fit: cover;
 }
 
 section {
@@ -86,7 +87,6 @@ nav {
   display: block;
   text-align: center;
   height: 4.8em;
-
 }
 
 nav li {
@@ -95,6 +95,7 @@ nav li {
   font-size: 1.7em;
   margin: 1% 2% 1% 0;
   position: relative;
+  border-radius: 1em;
 }
 
 nav li a{
@@ -102,7 +103,7 @@ nav li a{
 }
 
 nav option{
-	
+
 }
 /* Drop-down menu for nav bar */
 
@@ -114,7 +115,7 @@ nav option{
 
 #productlist{
 	width: 100%;
-	
+
 	position: absolute;
 	background-color: #1e1e1e;
 	padding: .2em;
