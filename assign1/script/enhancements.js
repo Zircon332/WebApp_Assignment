@@ -40,5 +40,18 @@ function navHighlight() {
 }
 
 
+// -----Slideshow----- //
+var i = 0;
 
-setTimeout(navHighlight,100);
+function changeimage(){
+  document.getElementById("banner2").style.backgroundImage = "url(styles/image/banner" + (i++ % 6) + ".jpg)";
+}
+function slider(){
+  setInterval(changeimage, 3000);
+}
+
+
+
+
+setTimeout(navHighlight, 100);
+setTimeout(slider, 1000);
