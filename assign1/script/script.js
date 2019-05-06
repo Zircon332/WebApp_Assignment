@@ -267,13 +267,21 @@ function drop_downNav() {
   }
 }
 
+//slideshow
+var i = 0;
 
+function changeimage(){
+  document.getElementById("banner").style.backgroundImage = "url(styles/image/banner" + (i++ % 6) + ".jpg)";
+}
+function slider(){
+  setInterval(changeimage, 3000);
+}
 
 // -----init----- //
 function init() {
 
   drop_downNav();                           // drop down nav
-
+  slider();
   // check which page is open
   currentPage = window.location.pathname.substring(window.location.pathname.lastIndexOf('/') + 1);
 
