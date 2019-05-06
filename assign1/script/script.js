@@ -44,7 +44,7 @@ function data_transfer() {
 
 // -----Data validation and input checking of Forms-----  //
 function checkSubject() {
-  subject = document.getElementById("subject").value;
+  subject = document.forms["enquiry_form"]["subject"].value;
   let returnText = "";
   if (subject == "")
   {
@@ -54,7 +54,7 @@ function checkSubject() {
 }
 
 function checkFname() {
-  name = document.getElementById("fname").value;
+  name = document.forms["enquiry_form"]["fname"].value;
   let returnText = "";
   if (name == "")
   {
@@ -77,7 +77,7 @@ function checkFname() {
 }
 
 function checkLname() {
-  name = document.getElementById("lname").value;
+  name = document.forms["enquiry_form"]["lname"].value;
   let returnText = "";
   if (name == "")
   {
@@ -100,7 +100,7 @@ function checkLname() {
 }
 
 function checkMail() {
-  email = document.getElementById("email").value;
+  email = document.forms["enquiry_form"]["email"].value;
   let returnText = "";
   if (email == "")
   {
@@ -118,7 +118,7 @@ function checkMail() {
 }
 
 function checkPhone() {
-  phone = document.getElementById("phone").value;
+  phone = document.forms["enquiry_form"]["phone"].value;
   let returnText = "";
   if (phone == "")
   {
@@ -136,7 +136,7 @@ function checkPhone() {
 }
 
 function checkStreet() {
-  street = document.getElementById("street").value;
+  street = document.forms["enquiry_form"]["street"].value;
   let returnText = "";
   if (street == "")
   {
@@ -150,7 +150,7 @@ function checkStreet() {
 }
 
 function checkCity() {
-  city = document.getElementById("city").value;
+  city = document.forms["enquiry_form"]["city"].value;
   let returnText = "";
   if (city == "")
   {
@@ -164,7 +164,7 @@ function checkCity() {
 }
 
 function checkState() {
-  state = document.getElementById("state").value;
+  state = document.forms["enquiry_form"]["state"].value;
   let returnText = "";
   if (state == "")
   {
@@ -174,7 +174,7 @@ function checkState() {
 }
 
 function checkPC() {
-  pc = document.getElementById("postcode").value;
+  pc = document.forms["enquiry_form"]["postcode"].value;
   let returnText = "";
   if (pc == "")
   {
@@ -192,7 +192,7 @@ function checkPC() {
 }
 
 function checkProduct() {
-  product = document.getElementById("product").value;
+  product = document.forms["enquiry_form"]["product"].value;
   let returnText = "";
   if (product == "")
   {
@@ -202,7 +202,7 @@ function checkProduct() {
 }
 
 function checkDuration() {
-  duration = document.getElementById("duration").value;
+  duration = document.forms["enquiry_form"]["duration"].value;
   let returnText = "";
   if (duration == "")
   {
