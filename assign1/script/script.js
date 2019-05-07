@@ -229,8 +229,6 @@ function checkForm() {
   alertText += checkProduct();
   alertText += checkDuration();
 
-  alert(alertText);
-
   if (alertText == "") {
     var psubject = subject;
 	var pfname = document.forms["enquiry_form"]["fname"].value;
@@ -248,6 +246,9 @@ function checkForm() {
     return confirm('Preview\nSubject: '+psubject+'\nFirst Name: '+pfname+'\nLast Name: '+plname+'\nEmail: '+pmail+'\nPhone: '+pphone+'\nStreet: '+pstreet+
 	'\nCity: '+pcity+'\nState: '+pstate+'\nPostal Code: '+ppc+'\nProduct: '+pproduct+'\nDuration: '+pduration+'\nComments: '+comment);
 }
+	else{
+		alert(alertText);
+	}
 }
 
 // -----Populate drop-down list using Javascript----- //

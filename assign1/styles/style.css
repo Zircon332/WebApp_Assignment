@@ -614,6 +614,10 @@ form {
   background-image: radial-gradient(rgba(102,153,153,.1),rgba(102,153,153,.1),rgba(102,153,153,.05),rgba(102,153,153,0), rgba(0,0,0,0));
 }
 
+#confirmation_form {
+  margin: 3% auto 0;
+}
+
 fieldset {
   border-radius: .6em;
   border: 1px solid #00BFFF;
