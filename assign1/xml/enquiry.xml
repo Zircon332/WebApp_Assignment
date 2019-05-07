@@ -2,11 +2,11 @@
 <html lang="en">
 
 <head>
+    <title>Enquiry|Rentone</title>
     <meta charset="utf-8" />
     <meta name="author" content="Wong Jun Jie, Wong Kah Heng, Joel Yeong, Ryan" />
     <meta name="description" content="This is the enquiry page" />
     <meta name="keywords" content="rent, instruments, online ordering" />
-    <title>Enquiry|Rentone</title>
     <link rel="stylesheet" type="text/css" href="styles/style.css" />
 </head>
 
@@ -19,24 +19,19 @@
     <nav>
         <ul>
             <li><a href="index.html">Home</a></li>
-            <li id='productlist'>Products
-                <ul>
-                    <li><a href="product1.html">Brass</a></li>
-                    <li><a href="product2.html">Strings</a></li>
-                    <li><a href="product3.html">Woodwind</a></li>
-                    <li><a href="product4.html">Percussion</a></li>
-                </ul>
+            <li>
+			<div id='navcont'>
+				Products
+                <div id='productlist'>
+
+				</div>
+			</div>
             </li>
             <li><a href="enquiry.html">Enquiry</a></li>
             <li><a href="disclaimer.html">Disclaimer</a></li>
         </ul>
     </nav>
     <div id="banner">
-        <!-- <div id="banner_text">
-            <h1>Enquiry</h1>
-            <p></p>
-            <a></a>
-          </div> -->
     </div>
 
     <section>
@@ -56,24 +51,26 @@
         <div class="form_header">
             <h2>ENQUIRY</h2>
         </div>
-        <form id="enquiry_form" enctype="text/plain" method="post" action="process.php">
+        <form id="enquiry_form" enctype="text/plain" method="post" action="action.php">
+            <label for="subject">Subject: </label>
+            <input type="text" id="subject" name="subject" required="Required" maxlength="40" size="40" value="RE: Enquiry on [product name]" />
+
             <fieldset>
                 <legend>Personal Detail : </legend>
                 <table>
                     <tr>
                         <td><label for="fname">Name: </label></td>
-                        <td><input type="text" id="fname" name="fname" required="Required" maxlength="25" size="25" placeholder="First Name" pattern="^[a-zA-Z]+$" />
-                            <input type="text" id="lname" name="lname" required="Required" maxlength="25" size="25" placeholder="Last Name" pattern="^[a-zA-Z]+$" /></td>
+                        <td><input type="text" id="fname" name="fname" required="Required" maxlength="26" size="26" placeholder="First Name" pattern="^[a-zA-Z]+$" />
+                            <input type="text" id="lname" name="lname" required="Required" maxlength="26" size="26" placeholder="Last Name" pattern="^[a-zA-Z]+$" /></td>
                     </tr>
                     <tr>
                         <td><label for="email">Email address: </label></td>
-                        <td><input type="email" id="email" name="email" required="Required" size="25" placeholder="example@email.com" /></td>
+                        <td><input type="text" id="email" name="email" required="Required" size="25" placeholder="example@email.com" /></td>
                     </tr>
                     <tr>
                         <td><label for="phone">Phone Number: </label></td>
-                        <td><input type="tel" id="phone" name="phone" placeholder="121-1211111" required="Required" maxlength="10" size="10" /></td>
+                        <td><input type="text" id="phone" name="phone" placeholder="0123456789" required="Required" maxlength="10" size="10" /></td>
                     </tr>
-
                 </table>
             </fieldset>
 
@@ -128,32 +125,8 @@
                     <tr>
                         <td><label for="product">Product: </label></td>
                         <td>
-                            <select id="product" name="product" required="Required">
+                            <select id="product" name="product" required="Required" onchange="data_transfer()">
                               <option value="">Choose</option>
-                                <optgroup label="Guitar">
-                                    <option value="guitar" selected="selected">Guitar</option>
-                                    <option value="drum">Drum</option>
-                                    <option value="piano">Piano</option>
-                                    <option value="violin">Violin</option>
-                                </optgroup>
-                                <optgroup label="Drum">
-                                    <option value="guitar">Guitar</option>
-                                    <option value="drum">Drum</option>
-                                    <option value="piano">Piano</option>
-                                    <option value="violin">Violin</option>
-                                </optgroup>
-                                <optgroup label="Piano">
-                                    <option value="guitar">Guitar</option>
-                                    <option value="drum">Drum</option>
-                                    <option value="piano">Piano</option>
-                                    <option value="violin">Violin</option>
-                                </optgroup>
-                                <optgroup label="Violin">
-                                    <option value="guitar">Guitar</option>
-                                    <option value="drum">Drum</option>
-                                    <option value="piano">Piano</option>
-                                    <option value="violin">Violin</option>
-                                </optgroup>
                             </select>
                         </td>
                     </tr>
@@ -170,7 +143,7 @@
 
             <div class="form_button">
                 <input type="Reset" value="Reset" />
-                <input type="Submit" value="Submit" />
+                <input id = "submit" type="Submit" value="Submit" />
             </div>
         </form>
     </article>
@@ -180,6 +153,7 @@
         <p>Email: <a href="mailto:Rentone@gmail.com">Rentone@gmail.com</a></p>
         <p>Phone: <a href="tel:+60123456789">0123456789</a></p>
     </aside>
+
 
     <footer>
         <div class="footer_grid">
@@ -213,6 +187,9 @@
         </div>
         <p class="footer_copyright">All rights reserved 2019| &#169; Team Easier To Remember</p>
     </footer>
+
+    <script src="script/script.js"></script>
+    <script src="script/enhancements.js"></script>
 </body>
 
 </html>
