@@ -45,7 +45,7 @@ h2{
 
 #banner2 {
   height: 90vh;
-  background-image: url(styles/image/banner0.jpg);
+  background-image: url(image/banner0.jpg);
 }
 
 section {
@@ -612,6 +612,10 @@ form {
   margin: 0 1% 0;
   padding: 0 9% 5%;
   background-image: radial-gradient(rgba(102,153,153,.1),rgba(102,153,153,.1),rgba(102,153,153,.05),rgba(102,153,153,0), rgba(0,0,0,0));
+}
+
+#confirmation_form {
+  margin: 3% auto 0;
 }
 
 fieldset {
