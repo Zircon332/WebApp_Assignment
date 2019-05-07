@@ -2,11 +2,11 @@
 <html lang="en">
 
 <head>
+    <title>CCO-500|Rentone</title>
     <meta charset="utf-8" />
     <meta name="author" content="Ryan Yap, Wong Kah Heng, Joel Yong, Wong Jun Jie" />
     <meta name="description" content="The CCO-500 Page" />
     <meta name="keywords" content="rent, instruments, online ordering" />
-    <title>CCO-500|Rentone</title>
     <link rel="stylesheet" type="text/css" href="styles/style.css" />
 </head>
 
@@ -19,14 +19,14 @@
     <nav>
         <ul>
             <li><a href="index.html">Home</a></li>
-            <li id='productlist'>Products
-                <ul>
-                    <li><a href="product1.html">Brass</a></li>
-                    <li><a href="product2.html">Strings</a></li>
-                    <li><a href="product3.html">Woodwind</a></li>
-                    <li><a href="product4.html">Percussion</a></li>
-                </ul>
-            </li>
+            <li>
+			<div id='navcont'>
+				Products
+                <div id='productlist'>
+
+				</div>
+			</div>
+			</li>
             <li><a href="enquiry.html">Enquiry</a></li>
             <li><a href="disclaimer.html">Disclaimer</a></li>
         </ul>
@@ -98,8 +98,11 @@
                     <p>When in possession of the instrument, the user holds full responsibility for what happens to the instrument. If the instrument rented is in anyway damaged, the customer will have to replace said instrument for the rental service. Late returners of the instrument would be issued a warning in a week, and will be subjegated to a RM150 late fee. For every subsequent week, another RM150 would be added.</p>
                 </li>
             </ol>
-
         </section>
+
+        <aside class="subject_cont">
+            <button type="button" id="subject_button" onclick="getSubject('CCO-500')">Order At Enquiry</button>
+        </aside>
     </article>
     <hr />
     <footer>
@@ -134,6 +137,9 @@
 		</div>
         <p class="footer_copyright">All rights reserved 2019| &#169; Team Easier To Remember</p>
     </footer>
+
+    <script src="script/script.js"></script>
+    <script src="script/enhancements.js"></script>
 </body>
 
 </html>

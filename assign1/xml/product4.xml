@@ -19,14 +19,14 @@
 <nav>
     <ul>
         <li><a href="index.html">Home</a></li>
-        <li id='productlist'>Products
-            <ul>
-                <li><a href="product1.html">Brass</a></li>
-                <li><a href="product2.html">Strings</a></li>
-                <li><a href="product3.html">Woodwind</a></li>
-                <li><a href="product4.html">Percussion</a></li>
-            </ul>
-        </li>
+        <li>
+			<div id='navcont'>
+				Products
+                <div id='productlist'>
+
+				</div>
+			</div>
+		</li>
         <li><a href="enquiry.html">Enquiry</a></li>
         <li><a href="disclaimer.html">Disclaimer</a></li>
     </ul>
@@ -120,6 +120,8 @@
       <p class="footer_copyright">All rights reserved 2019| &#169; Team Easier To Remember</p>
   </footer>
 
+  <script src="script/script.js"></script>
+  <script src="script/enhancements.js"></script>
 </body>
 
 </html>
