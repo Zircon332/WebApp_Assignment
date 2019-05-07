@@ -45,7 +45,12 @@ h2{
 
 #banner2 {
   height: 90vh;
+  width: 100%;
   background-image: url(image/banner0.jpg);
+  object-fit: fill;
+  background-repeat: repeat-x;
+  background-position: center center;
+  transition: 1s;
 }
 
 section {
