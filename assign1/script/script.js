@@ -17,7 +17,7 @@ function storeSubject(subject) {
 
 // Get the name of the instrument from the product pages and store it
 function getSubject(subject) {
-  document.location = "enquiry.html";
+  document.location = "enquiry.php";
   storeSubject(subject);
 }
 
@@ -271,7 +271,7 @@ function drop_down() {
 function drop_downNav() {
   var select = document.getElementById('productlist');
   var options = ["Brass", "String", "Woodwind", "Percussion"];
-  var links = ["product1.html", "product2.html", "product3.html", "product4.html"]
+  var links = ["product1.php", "product2.php", "product3.php", "product4.php"]
   // loop to store options in array //
   for (var i = 0; i < options.length; i++) {
     var el = document.createElement('a');
@@ -290,7 +290,7 @@ function init() {
   // check which page is open
   currentPage = window.location.pathname.substring(window.location.pathname.lastIndexOf('/') + 1);
 
-  if (currentPage == "enquiry.html") {      // if at enquiry.html
+  if (currentPage == "enquiry.php") {      // if at enquiry.html
     drop_down();                              // input select drop
     displaySubject();                         // Insert instrument name in subject field
 
