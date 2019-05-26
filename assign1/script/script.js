@@ -271,7 +271,7 @@ function drop_down() {
 function drop_downNav() {
   var select = document.getElementById('productlist');
   var options = ["Brass", "String", "Woodwind", "Percussion"];
-  var links = ["product1.php", "product2.php", "product3.php", "product4.php"]
+  var links = ["product1.php", "product2.php", "product3.php", "product4.php"];
   // loop to store options in array //
   for (var i = 0; i < options.length; i++) {
     var el = document.createElement('a');
@@ -281,7 +281,9 @@ function drop_downNav() {
   }
 }
 
-
+function expand_table() {
+  alert("Expand Table");
+}
 
 // -----init----- //
 function init() {

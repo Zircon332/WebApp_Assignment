@@ -30,7 +30,6 @@
       $dbname = "enquirydb";
       $conn = mysqli_connect($servername, $username, $password, $dbname);
       $product = $_POST['product'];
-      $lname = $_POST['lname'];
 
       if ($conn){
         $query = "SELECT * FROM userinfo WHERE fname='$fname' AND lname='$lname'";
