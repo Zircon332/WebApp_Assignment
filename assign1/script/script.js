@@ -290,7 +290,7 @@ function init() {
   // check which page is open
   currentPage = window.location.pathname.substring(window.location.pathname.lastIndexOf('/') + 1);
 
-  if (currentPage == "enquiry.php") {      // if at enquiry.html
+  if (currentPage == "enquiry.php") {      // if at enquiry.php
     drop_down();                              // input select drop
     displaySubject();                         // Insert instrument name in subject field
 
