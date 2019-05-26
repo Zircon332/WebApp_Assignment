@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>View Enquiry|Rentone</title>
+    <title>View Rent|Rentone</title>
     <meta charset="utf-8" />
     <meta name="author" content="Ryan Yap, Wong Kah Heng, Joel Yong, Wong Jun Jie" />
     <meta name="description" content="Enquiry Viewing Page" />
@@ -29,16 +29,17 @@
       $password = "";
       $dbname = "enquirydb";
       $conn = mysqli_connect($servername, $username, $password, $dbname);
+      $fname = $_POST['fname'];
+      $lname = $_POST['lname'];
 
       if ($conn){
-        $query = "SELECT * FROM userinfo";
+        $query = "SELECT * FROM userinfo WHERE fname='$fname' AND lname='$lname'";
         $result = mysqli_query($conn, $query);
         if($result){
           $row = mysqli_fetch_assoc($result);
           if($row){
             echo "<table>";
             echo "<tr><th>UserID</th><th>Subject</th><th>Firstname</th><th>Lastname</th><th>Email</th><th>Phone No.</th><th>Street</th><th>City</th><th>State</th><th>Postcode</th><th>Product</th><th>Duration</th><th>Comments</th></tr>";
-            while($row){
               echo "<tr><td>{$row['userID']}</td>";
               echo "<td>{$row['subject']}</td>";
               echo "<td>{$row['fname']}</td>";
@@ -52,8 +53,6 @@
               echo "<td>{$row['product']}</td>";
               echo "<td>{$row['duration']}</td>";
               echo "<td>{$row['comment']}</td></tr>";
-              $row = mysqli_fetch_assoc($result);
-            }
             echo "</table>";
 
           }
