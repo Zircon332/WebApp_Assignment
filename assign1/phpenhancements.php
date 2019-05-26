@@ -18,8 +18,7 @@
         <?php include_once("includes/nav.php");?>
     </nav>
 
-    <div id="banner2">
-    </div>
+	<?php include_once("includes/banner.php");?>
 
     <article class="enhancements">
         <h2>List of enhancements</h2>
