@@ -29,7 +29,7 @@
       $password = "";
       $dbname = "enquirydb";
       $conn = mysqli_connect($servername, $username, $password, $dbname);
-      $fname = $_POST['fname'];
+      $product = $_POST['product'];
       $lname = $_POST['lname'];
 
       if ($conn){

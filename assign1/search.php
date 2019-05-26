@@ -33,9 +33,8 @@
                 <legend>Search for your purchase : </legend>
                 <table>
                     <tr>
-                        <td><label for="fname">Name: </label></td>
-                        <td><input type="text" id="fname" name="fname" required="Required" maxlength="26" size="26" placeholder="First Name" pattern="^[a-zA-Z]+$" />
-                            <input type="text" id="lname" name="lname" required="Required" maxlength="26" size="26" placeholder="Last Name" pattern="^[a-zA-Z]+$" /></td>
+                        <td><label for="product">Product Name: </label></td>
+                        <td><input type="text" id="product" name="product" required="Required" maxlength="26" size="26" placeholder="Product" /></td>
                     </tr>
               </table>
           </fieldset>
