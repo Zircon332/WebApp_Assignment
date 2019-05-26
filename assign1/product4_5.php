@@ -18,7 +18,7 @@
         <?php include_once("includes/nav.php");?>
     </nav>
 
-    <div id="banner">
+    <div id="banner2">
     </div>
 
     <article>
@@ -74,7 +74,7 @@
     <footer>
         <?php include_once("includes/footer.php");?>
     </footer>
-    
+
     <script src="script/script.js"></script>
     <script src="script/enhancements.js"></script>
 </body>
