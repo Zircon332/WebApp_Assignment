@@ -18,7 +18,7 @@
         <?php include_once("includes/nav.php");?>
     </nav>
 
-    <div id="banner">
+    <div id="banner2">
     </div>
 
     <hr />
