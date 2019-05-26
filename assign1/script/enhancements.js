@@ -40,6 +40,14 @@ function navHighlight() {
 }
 
 
+
+function expand_table() {
+    table = document.getElementById("enquiry_table");
+    alert("Table is expanded")
+}
+
+
+
 // -----Slideshow----- //
 var i = 0;
 

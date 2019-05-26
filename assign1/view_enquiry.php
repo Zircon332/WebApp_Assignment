@@ -36,6 +36,12 @@
 
     <div id="banner2">
     </div>
+
+
+    <aside class="subject_cont">
+      <button type="button" onclick="expand_table()">Expand Table</button>
+    </aside>
+
     <article class='viewenquiry'>
     <?php
       $servername = "localhost";
@@ -50,7 +56,7 @@
         if($result){
           $row = mysqli_fetch_assoc($result);
           if($row){
-            echo "<table>";
+            echo "<table id='enquiry_table'>";
             echo "<tr><th>UserID</th><th>Subject</th><th>Firstname</th><th>Lastname</th><th>Email</th><th>Phone No.</th><th>Street</th><th>City</th><th>State</th><th>Postcode</th><th>Product</th><th>Duration</th><th>Comments</th></tr>";
             while($row){
               echo "<tr><td>{$row['userID']}</td>";
@@ -77,6 +83,7 @@
       }
     ?>
     </article>
+
     <hr />
     <footer>
         <div class="footer_grid">
