@@ -34,97 +34,48 @@
         </ul>
     </nav>
 
-    <div id="banner">
+    <div id="banner2">
     </div>
+    <article class='viewenquiry'>
     <?php
       $servername = "localhost";
       $username = "root";
       $password = "";
       $dbname = "enquirydb";
       $conn = mysqli_connect($servername, $username, $password, $dbname);
-      
+
       if ($conn){
-        $query = "SELECT * FROM $dbname";
+        $query = "SELECT * FROM userinfo";
         $result = mysqli_query($conn, $query);
         if($result){
           $row = mysqli_fetch_assoc($result);
-        }
-        if($record){
-          echo "<article class='viewenquiry'>";
-          echo "<table>";
-          echo "<tr><th>Subject</th><th>Lastname</th><th>Email</th><th>Phone No.</th><th>Street</th><th>City</th><th>State</th><th>Postcode</th><th>Duration</th><th>Comments</th></tr>";
-          while($row){
-            echo "<tr><td>{$row['subject']}</td>";
-            echo "<td>{$row['fname']}</td>";
-            echo "<td>{$row['lname']}</td>";
-            echo "<td>{$row['email']}</td>";
-            echo "<td>{$row['phone']}</td>";
-            echo "<td>{$row['street']}</td>";
-            echo "<td>{$row['city']}</td>";
-            echo "<td>{$row['state']}</td>";
-            echo "<td>{$row['postcode']}</td>";
-            echo "<td>{$row['product']}</td>";
-            echo "<td>{$row['duration']}</td>";
-            echo "<td>{$row['comment']}</td></tr>";
-            $row = mysqli_fetch_assoc($result);
+          if($row){
+            echo "<table>";
+            echo "<tr><th>UserID</th><th>Subject</th><th>Firstname</th><th>Lastname</th><th>Email</th><th>Phone No.</th><th>Street</th><th>City</th><th>State</th><th>Postcode</th><th>Product</th><th>Duration</th><th>Comments</th></tr>";
+            while($row){
+              echo "<tr><td>{$row['userID']}</td>";
+              echo "<td>{$row['subject']}</td>";
+              echo "<td>{$row['fname']}</td>";
+              echo "<td>{$row['lname']}</td>";
+              echo "<td>{$row['email']}</td>";
+              echo "<td>{$row['phone']}</td>";
+              echo "<td>{$row['street']}</td>";
+              echo "<td>{$row['city']}</td>";
+              echo "<td>{$row['state']}</td>";
+              echo "<td>{$row['postcode']}</td>";
+              echo "<td>{$row['product']}</td>";
+              echo "<td>{$row['duration']}</td>";
+              echo "<td>{$row['comment']}</td></tr>";
+              $row = mysqli_fetch_assoc($result);
+            }
+            echo "</table>";
+
           }
-          echo "</table>";
         }
       } else{
         die("Connection Failed: " . mysqli_connect_error());
       }
     ?>
-    <article class="viewenquiry">
-        <table>
-          <tr>
-            <th>Subject</th>
-            <td>Place Holder</td>
-          </tr>
-          <tr>
-            <th>First Name</th>
-            <td>Place Holder</td>
-          </tr>
-          <tr>
-            <th>Last Name</th>
-            <td>Place Holder</td>
-          </tr>
-          <tr>
-            <th>Email</th>
-            <td>Place Holder</td>
-          </tr>
-          <tr>
-            <th>Phone No.</th>
-            <td>Place Holder</td>
-          </tr>
-          <tr>
-            <th>Street</th>
-            <td>Place Holder</td>
-          </tr>
-          <tr>
-            <th>City</th>
-            <td>Place Holder</td>
-          </tr>
-          <tr>
-            <th>State</th>
-            <td>Place Holder</td>
-          </tr>
-          <tr>
-            <th>Postcode</th>
-            <td>Place Holder</td>
-          </tr>
-          <tr>
-            <th>Product</th>
-            <td>Place Holder</td>
-          </tr>
-          <tr>
-            <th>Duration</th>
-            <td>Place Holder</td>
-          </tr>
-          <tr>
-            <th>Comments</th>
-            <td>Place Holder</td>
-          </tr>
-      </table>
     </article>
     <hr />
     <footer>
