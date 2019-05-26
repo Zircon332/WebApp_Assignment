@@ -41,8 +41,6 @@
       $username = "root";
       $password = "";
       $dbname = "enquirydb";
-      $fname = $_POST['fname']
-      $lname = $_POST['lname']
       $conn = mysqli_connect($servername, $username, $password, $dbname);
       
       if ($conn){
