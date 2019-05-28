@@ -251,6 +251,15 @@ function checkForm() {
 	}
 }
 
+// php storage //
+function storeRegister(name, username, password){
+  sessionStorage.name = name;
+  sessionStorage.username = username;
+  sessionStorage.password = password;
+  
+  alert(sessionStorage.name);
+}
+
 // -----Populate drop-down list using Javascript----- //
 
 // [ Function description ]
@@ -301,5 +310,11 @@ function init() {
     clickme.onclick = checkForm;
   }
 }
-
+  if (currentPage == "register.php"){
+    var vName = getElementById("vName");
+    var uName = getElementById("uName");
+    var uPass = getElementbyId("uPass");
+    var clickme = document.getElementById("register");
+    clickme.onclick = storeRegister(vName, uName, uPass);
+  }
 window.onload = init;

@@ -60,3 +60,5 @@ function slider(){
 
 setTimeout(navHighlight, 100);
 setTimeout(slider, 1000);
+
+

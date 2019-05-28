@@ -25,7 +25,7 @@
 
 
     <aside class="subject_cont">
-      <button type="button" onclick="expand_table()">Expand Table</button>
+      <button id="subject_button" type="button" onclick="expand_table()">Expand Table</button>
     </aside>
 
     <article class='viewenquiry'>
