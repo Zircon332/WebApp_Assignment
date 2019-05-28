@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Enquiry|Rentone</title>
+    <title>Login|Rentone</title>
     <meta charset="utf-8" />
     <meta name="author" content="Wong Jun Jie, Wong Kah Heng, Joel Yeong, Ryan" />
     <meta name="description" content="This is the enquiry page" />
@@ -21,26 +21,34 @@
     </div>
 
     <section>
-        <h2>Search</h2>
+        <h2>Login</h2>
+        <p class="space_bottom">Welcome to the <strong>login page</strong>. 
+        <p class="space_bottom">We respect your privacy and take protecting it seriously.<br />
+            All provided informtaion will be used only for the purpose of providing service for our clients.<br />
+            For more information, check out our <a href="disclaimer.php">Disclaimer page</a>.</p>
     </section>
 
     <article>
         <div class="form_header">
-            <h2>Search</h2>
+            <h2>Login</h2>
         </div>
-        <form id="enquiry_form" enctype="text/plain" method="post" action="searched.php">
+        <form id="register_form" action="loginProcess.php" method="POST">
             <fieldset>
-                <legend>Search for your purchase : </legend>
+                <legend>Login : </legend>
                 <table>
                     <tr>
-                        <td><label for="product">Product Name: </label></td>
-                        <td><input type="text" id="product" name="product" required="Required" maxlength="26" size="26" placeholder="Product" /></td>
+                        <td><label for="uName">Username: </label></td>
+                        <td><input type="text" id="lName" name="lName" required="Required" minlength="5" maxlength="26" size="26" placeholder="username"/></td>
                     </tr>
-              </table>
-          </fieldset>
+                    <tr>
+                        <td><label for="uPass">Password: </label></td>
+                        <td><input type="text" id="lPass" name="lPass" placeholder="Password" required="Required" minlength="8" size="26"/></td>
+                    </tr>
+                </table>
+            </fieldset>
+
             <div class="form_button">
-                <input type="Reset" value="Reset" />
-                <input id = "submit" type="Submit" value="Submit" />
+                <input id = "register" type="Submit" value="Login" />
             </div>
         </form>
     </article>
