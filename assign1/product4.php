@@ -71,6 +71,8 @@
         <br />
     </article>
 
+    <?php include_once("regbox.php")?>
+
     <hr />
     <footer>
         <?php include_once("includes/footer.php");?>

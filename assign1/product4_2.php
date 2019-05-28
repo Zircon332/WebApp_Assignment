@@ -81,6 +81,9 @@
             <button type="button" id="subject_button" onclick="getSubject('CMS Snare')">Order At Enquiry</button>
         </aside>
     </article>
+
+    <?php include_once("regbox.php")?>
+    
     <hr />
     <footer>
         <?php include_once("includes/footer.php");?>

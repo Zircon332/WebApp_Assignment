@@ -84,6 +84,8 @@
         <button onclick="window.location.href='enquiry.php'" class="button"><span>ORDER HERE</span></button>
     </aside>
 
+    <?php include_once("includes/regbox.php")?>
+
     <hr />
     <footer>
         <?php include_once("includes/footer.php");?>

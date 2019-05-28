@@ -100,6 +100,9 @@
             <button type="button" id="subject_button" onclick="getSubject('KA-15S')">Order At Enquiry</button>
         </aside>
     </article>
+
+    <?php include_once("regbox.php")?>
+    
     <hr />
     <footer>
         <?php include_once("includes/footer.php");?>
