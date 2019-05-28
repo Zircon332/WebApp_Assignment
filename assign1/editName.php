@@ -23,24 +23,21 @@
     <div id="banner2">
     </div>
   <?php
-      $user = $_POST['lName'];
-      $pass = $_POST['lPass'];
+      $pname = $_POST['pName'];
+      $name = $_POST['name'];
       $servername = "localhost";
       $username = "root";
       $password = "";
       $dbname = "enquirydb";
       $conn = mysqli_connect($servername, $username, $password, $dbname);
       if($conn){
-        $query = "SELECT name FROM usertable WHERE username='$user' AND password='$pass'";
-        $result = mysqli_query($conn, $query);
+        $query = "UPDATE usertable SET name = '$name' WHERE name = '$pname'";
+        $query2 = "SELECT name FROM usertable WHERE name = '$name'";
+        $result = mysqli_query($conn, $query2);
         if($result){
-          $name = mysqli_fetch_assoc($result);
-          echo "<p>Welcome Back {$name['name']}</p>";
+          $newname = mysqli_fetch_assoc($result);
+          echo "<p>Name successfully changed to {$newname['name']}</p>";
           echo "<p><a href='index.php'>Return to Home Page</a></p>";
-          $_SESSION['logged'] = true;
-        }else{
-          echo "Login failed!";
-          die;
         } 
       } else{
         die("Connection Failed: " . mysqli_connect_error());

@@ -2,6 +2,7 @@
   session_start();
   if(isset($_SESSION['logged']) && $_SESSION['logged'] == true){
     $logout = "<li><a href='logout.php'>Logout</a></li>";
+    $view = "<li><a href='view.php'>View Other Members</a></li>";
   }  
 
 ?>
@@ -21,6 +22,7 @@
     <?php 
   if(isset($_SESSION['logged']) && $_SESSION['logged'] == true){
      echo $logout;
+     echo $view;
   }
   ?>
 </ul>

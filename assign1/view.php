@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Login|Rentone</title>
+    <title>View Enquiry|Rentone</title>
     <meta charset="utf-8" />
     <meta name="author" content="Ryan Yap, Wong Kah Heng, Joel Yong, Wong Jun Jie" />
     <meta name="description" content="Enquiry Viewing Page" />
@@ -22,32 +22,36 @@
 
     <div id="banner2">
     </div>
-  <?php
-      $user = $_POST['lName'];
-      $pass = $_POST['lPass'];
+
+    <article class='viewenquiry'>
+    <?php
       $servername = "localhost";
       $username = "root";
       $password = "";
       $dbname = "enquirydb";
       $conn = mysqli_connect($servername, $username, $password, $dbname);
-      if($conn){
-        $query = "SELECT name FROM usertable WHERE username='$user' AND password='$pass'";
+
+      if ($conn){
+        $query = "SELECT name, datejoined FROM usertable";
         $result = mysqli_query($conn, $query);
         if($result){
-          $name = mysqli_fetch_assoc($result);
-          echo "<p>Welcome Back {$name['name']}</p>";
-          echo "<p><a href='index.php'>Return to Home Page</a></p>";
-          $_SESSION['logged'] = true;
-        }else{
-          echo "Login failed!";
-          die;
-        } 
+          $row = mysqli_fetch_assoc($result);
+          if($row){
+            echo "<table>";
+            echo "<tr><th>Name</th><th>Date Joined</th></tr>";
+            while($row){
+              echo "<tr><td>{$row['name']}</td>";
+              echo "<td>{$row['datejoined']}</td></tr>";
+              $row = mysqli_fetch_assoc($result);
+            }
+            echo "</table>";
+
+          }
+        }
       } else{
         die("Connection Failed: " . mysqli_connect_error());
       }
     ?>
-    <article class='viewenquiry'>
-      
     </article>
 
     <hr />

@@ -917,10 +917,12 @@ li.about_course {
 .viewenquiry table{
   margin: auto;
   border: 2px solid white;
+  width: 50%
 }
 .viewenquiry table th, .viewenquiry table td{
 	color: white;
-	font-size:100%;
+	font-size: 120%;
 	text-align:center;
     border: 2px solid white;
+    padding: 20px;
 }
