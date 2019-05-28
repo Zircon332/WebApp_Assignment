@@ -33,6 +33,7 @@
       if($conn){
         $query = "UPDATE usertable SET name = '$name' WHERE name = '$pname'";
         $query2 = "SELECT name FROM usertable WHERE name = '$name'";
+        mysqli_query($conn, $query);
         $result = mysqli_query($conn, $query2);
         if($result){
           $newname = mysqli_fetch_assoc($result);
