@@ -64,7 +64,7 @@
     ?>
 
     <article>
-      <form id="bookform" method="post" action="process.php">
+      <form id="bookform" method="post" action="confirmprocess.php">
         <input type="hidden" name="pfname" value="<?php echo $firstname; ?>">
         <input type="hidden" name="plname" value="<?php echo $lastname; ?>">
         <input type="hidden" name="pemail" value="<?php echo $pemail; ?>">

@@ -49,17 +49,17 @@
     </section>
 
     <?php
-      $firstname=$_POST['fname'];
-      $lastname=$_POST['lname'];
-      $pemail=$_POST['email'];
-      $pphone=$_POST['phone'];
-      $pstreet=$_POST['street'];
-      $pcity=$_POST['city'];
-      $pstate=$_POST['state'];
-      $ppostcode=$_POST['postcode'];
-      $pproduct=$_POST['product'];
-      $pduration=$_POST['duration'];
-      $pcomments=$_POST['comments'];
+      $firstname=$_POST['pfname'];
+      $lastname=$_POST['plname'];
+      $pemail=$_POST['pemail'];
+      $pphone=$_POST['pphone'];
+      $pstreet=$_POST['pstreet'];
+      $pcity=$_POST['pcity'];
+      $pstate=$_POST['pstate'];
+      $ppostcode=$_POST['ppostcode'];
+      $pproduct=$_POST['pproduct'];
+      $pduration=$_POST['pduration'];
+      $pcomments=$_POST['pcomments'];
 
     ?>
 
