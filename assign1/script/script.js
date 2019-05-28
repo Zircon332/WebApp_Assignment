@@ -309,14 +309,6 @@ function init() {
     var clickme = document.getElementById("submit");
     clickme.onclick = checkForm;
   }
-
-  if (currentPage == "register.php"){
-    var vName = getElementById("vName");
-    var uName = getElementById("uName");
-    var uPass = getElementbyId("uPass");
-    var clickme = document.getElementById("register");
-    clickme.onclick = storeRegister(vName, uName, uPass);
-
-  }
 }
+  
 window.onload = init;

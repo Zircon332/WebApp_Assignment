@@ -17,7 +17,8 @@
     <nav>
         <?php include_once("includes/nav.php");?>
     </nav>
-	<?php include_once("includes/banner.php");?>
+    <div id="banner2">
+    </div>
 
     <article>
         <section class="borderit">

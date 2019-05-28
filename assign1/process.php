@@ -29,7 +29,7 @@
       $servername = "localhost";
       $username = "root";
       $password = "";
-      $dbname = "userdb";
+      $dbname = "enquirydb";
       $conn = mysqli_connect($servername, $username, $password, $dbname);
       if($conn){
         $query = "INSERT INTO usertable(username, password, name, datejoined)

@@ -18,7 +18,8 @@
         <?php include_once("includes/nav.php");?>
     </nav>
 
-	<?php include_once("includes/banner.php");?>
+    <div id="banner2">
+    </div>
 
     <hr />
     <article>
@@ -77,8 +78,6 @@
         <br/>
         <br/>
     </article>
-
-    <?php include_once("regbox.php")?>
 
     <hr />
     <footer>

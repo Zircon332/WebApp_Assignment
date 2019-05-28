@@ -17,8 +17,8 @@
     <nav>
         <?php include_once("includes/nav.php");?>
     </nav>
-
-	<?php include_once("includes/banner.php");?>
+    <div id="banner2">
+    </div>
 
     <section>
         <h2>ENQUIRY</h2>
@@ -37,7 +37,7 @@
         <div class="form_header">
             <h2>ENQUIRY</h2>
         </div>
-        <form id="enquiry_form" method="post" action="enquiry_process.php">
+        <form id="enquiry_form" enctype="text/plain" method="post" action="action.php">
             <label for="subject">Subject: </label>
             <input type="text" id="subject" name="subject" required="Required" maxlength="40" size="40" value="RE: Enquiry on [product name]" />
 
