@@ -89,7 +89,9 @@
             <button type="button" id="subject_button" onclick="getSubject('CCO-500')">Order At Enquiry</button>
         </aside>
     </article>
+	<?php include_once("includes/regbox.php")?>
     <hr />
+	
     <footer>
         <?php include_once("includes/footer.php");?>
     </footer>
