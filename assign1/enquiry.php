@@ -147,6 +147,7 @@
 
     <script src="script/script.js"></script>
     <script src="script/enhancements.js"></script>
+	<script src="script/confirm.js"></script>
 </body>
 
 </html>
