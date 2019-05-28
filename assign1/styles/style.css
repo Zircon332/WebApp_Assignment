@@ -381,23 +381,32 @@ footer p{
 
 #homeenq{
 	text-align:center;
-	background-color:#e5bd4e;
+	background-color:#f8c435;
 	border:1px solid black;
 	margin:2% 2% 5%;
 	border-radius:1em;
 	margin-bottom: 7%;
 }
 
+#regbox {
+  text-align:center;
+	background-color: #fac414;
+	border: 1px solid black;
+	margin: 2% 10% 2%;
+	border-radius:1em;
+	margin-bottom: 7%;
+}
+
 .button {
 	border-radius: 4px;
-	background-color: #474748;
+	background-color: #2f2f52;
 	border: none;
 	font-size: 150%;
 	padding: 1.5%;
 	width: 25%;
 	transition: all 0.5s;
 	cursor: pointer;
-	margin: 2%;
+	margin: 0 0 2%;
 }
 
 .button span {
