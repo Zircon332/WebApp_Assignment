@@ -17,8 +17,7 @@
     <nav>
         <?php include_once("includes/nav.php");?>
     </nav>
-    <div id="banner2">
-    </div>
+	<?php include_once("includes/banner.php");?>
 
     <article>
         <section class="borderit">
@@ -97,6 +96,9 @@
             <button type="button" id="subject_button" onclick="getSubject('SV-600')">Order At Enquiry</button>
         </aside>
     </article>
+
+    <?php include_once("regbox.php")?>
+
     <hr />
     <footer>
         <?php include_once("includes/footer.php");?>
