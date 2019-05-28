@@ -215,6 +215,23 @@ function checkDuration() {
   return(returnText);
 }
 
+function storeBooking(pfname, plname, pmail, pphone, pstreet, pcity, pstate, ppc, pproduct, pduration, comment) {
+  sessionStorage.pfirstname = pfname;
+  sessionStorage.plastname = plname;
+  sessionStorage.pemail = pmail;
+  sessionStorage.pphone = pphone;
+  sessionStorage.pstreet = pstreet;
+  sessionStorage.pcity = pcity;
+  sessionStorage.pstate = pstate;
+  sessionStorage.ppostcode = ppc;
+  sessionStorage.pproduct = pproduct;
+  sessionStorage.pduration = pduration;
+  sessionStorage.comment = comment;
+
+  alert ("Firstname stored: " + sessionStorage.pfirstname);
+  alert ("Firstname stored: " + sessionStorage.plastname);
+}
+
 function checkForm() {
   var alertText = ""
   alertText += checkSubject();
@@ -245,6 +262,8 @@ function checkForm() {
 	/*enhancement for pop up data preview integrated into original js code*/
     return confirm('Preview\nSubject: '+psubject+'\nFirst Name: '+pfname+'\nLast Name: '+plname+'\nEmail: '+pmail+'\nPhone: '+pphone+'\nStreet: '+pstreet+
 	'\nCity: '+pcity+'\nState: '+pstate+'\nPostal Code: '+ppc+'\nProduct: '+pproduct+'\nDuration: '+pduration+'\nComments: '+comment);
+
+  storeBooking(pfname, plname, pmail, pphone, pstreet, pcity, pstate, ppc, pproduct, pduration, comment)
 }
 	else{
 		alert(alertText);
@@ -256,9 +275,11 @@ function storeRegister(name, username, password){
   sessionStorage.name = name;
   sessionStorage.username = username;
   sessionStorage.password = password;
-  
+
   alert(sessionStorage.name);
 }
+
+
 
 // -----Populate drop-down list using Javascript----- //
 
