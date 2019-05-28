@@ -70,7 +70,7 @@
         </aside>
     </article>
     
-    <?php include_once("regbox.php")?>
+    <?php include_once("includes/regbox.php")?>
     
     <hr />
     <footer>
