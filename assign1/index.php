@@ -18,9 +18,7 @@
         <?php include_once("includes/nav.php");?>
     </nav>
 
-    <div id="banner2">
-
-    </div>
+	<?php include_once("includes/banner.php");?>
 
     <article id="textinfo">
         <h2>Who are we?</h2>
@@ -85,6 +83,8 @@
         <h1> Want to place an order? Just click right here </h1>
         <button onclick="window.location.href='enquiry.php'" class="button"><span>ORDER HERE</span></button>
     </aside>
+
+    <?php include_once("includes/regbox.php")?>
 
     <hr />
     <footer>
