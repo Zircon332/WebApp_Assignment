@@ -37,7 +37,7 @@
       $conn = mysqli_connect($servername, $username, $password, $dbname);
 
       if ($conn){
-        $query = "SELECT * FROM userinfo";
+        $query = "SELECT * FROM enquiry";
         $result = mysqli_query($conn, $query);
         if($result){
           $row = mysqli_fetch_assoc($result);

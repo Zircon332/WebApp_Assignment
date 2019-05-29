@@ -22,10 +22,10 @@ function createDatabase(){
 function createTable1(){
   $conn1 = mysqli_connect(SERVERNAME, USERNAME, PASSWORD, DBNAME);
   if($conn1){
-    $query1 = "SELECT * FROM userinfo";
+    $query1 = "SELECT * FROM enquiry";
     $result1 = mysqli_query($conn1, $query1);
     if(!($result1)){
-      $que1 = "CREATE TABLE userinfo (
+      $que1 = "CREATE TABLE enquiry (
       userID INT(11) UNSIGNED AUTO_INCREMENT,
       subject VARCHAR(255) NOT NULL,
       fname VARCHAR(25) NOT NULL,
