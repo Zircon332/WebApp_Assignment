@@ -286,7 +286,7 @@ function storeRegister(name, username, password){
 // [ Function description ]
 function drop_down() {
   var select = document.getElementById('product');
-  var options = ["BTR300", "JP251S", "YSL-354", "YHR-314II", "YEP-202M", "YMP-204MS", "EFL-100", "YCL-200ADII", "YAS-26", "YTS-26", "YCL-650", "YPC-62", "CB-840C", "CMS-All Series Snare", "CT-9000 Series",
+  var options = ["BTR300", "JP251S", "YSL-354", "YHR-314II", "YEP-202M", "YMP-204MS", "FX310AII", "KA-15S", "SV-600", "CC0-550", "SVA-175", "EFL-100", "YCL-200ADII", "YAS-26", "YTS-26", "YCL-650", "YPC-62", "CB-840C", "CMS-All Series Snare", "CT-9000 Series",
   "TP-4300R", "YX-135"];
   // loop to store options in array //
   for (var i = 0; i < options.length; i++) {

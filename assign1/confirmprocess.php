@@ -13,27 +13,12 @@
 
 <body>
     <header>
-        <div id="logo">
-            <img src="image/logo.gif" alt="logo" /> <!-- https://www.google.com/search?q=music+rental+logo&rlz=1C1GCEJ_enMY842MY842&tbm=isch&source=iu&ictx=1&fir=MbPvCTUvLQPHlM%253A%252ClQdQacHjl7eSOM%252C_&vet=1&usg=AI4_-kQB1eiDk9RWKMmH0FTv45qccPoFwQ&sa=X&ved=2ahUKEwis-sbDl6HhAhXFh3AKHX4rB6QQ9QEwAnoECAkQCA#imgrc=j-82AillGreLPM:&vet=1 -->
-        </div>
+        <?php include_once("includes/header.php");?>
     </header>
     <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li>
-			<div id='navcont'>
-				Products
-                <div id='productlist'>
-
-				</div>
-			</div>
-            </li>
-            <li><a href="enquiry.html">Enquiry</a></li>
-            <li><a href="disclaimer.html">Disclaimer</a></li>
-        </ul>
+        <?php include_once("includes/nav.php");?>
     </nav>
-    <div id="banner2">
-    </div>
+    <?php include_once("includes/banner.php");?>
 
     <section>
         <h2>ENQUIRY</h2>
@@ -49,6 +34,7 @@
     </section>
 
     <?php
+      $subject = $_POST['subject'];
       $firstname=$_POST['pfname'];
       $lastname=$_POST['plname'];
       $pemail=$_POST['pemail'];
@@ -60,104 +46,39 @@
       $pproduct=$_POST['pproduct'];
       $pduration=$_POST['pduration'];
       $pcomments=$_POST['pcomments'];
-
+    
+      $servername = 'localhost';
+      $username = 'root';
+      $password = "";
+      $dbname = 'enquirydb';
+      
+      $conn = mysqli_connect($servername, $username, $password, $dbname);
+      if($conn){
+        $query = "INSERT INTO userinfo(subject, fname, lname, email, phone, street, city, state, postcode, product, duration, comment)
+        VALUES('$subject', '$firstname', '$lastname', '$pemail', '$pphone', '$pstreet', '$pcity', '$pstate', '$ppostcode', '$pproduct', '$pduration', '$pcomments')";
+        $result = mysqli_query($conn, $query);
+        if($result){
+          echo "<h1>Your enquiry has been sent to us successfully! Thank You!</h1>";
+          echo "<h2>To view all enquiries, go to <a href='view_enquiry.php'>View Enquiries</a></h2>";
+        }else{
+          echo "Your Enquiry has failed, please try again later.";
+        }
+      }else{
+        die("Connection FailedL " . mysqli_connect_error());
+      }
     ?>
 
     <article>
-      <table>
-        <th>Description</th>
-        <th>Value</th>
-        <tr>
-          <td>First name</td>
-          <td><?php echo $pfirstname;?></td>
-        </tr>
-        <tr>
-          <td>Last name</td>
-          <td><?php echo $plastname;?></td>
-        </tr>
-        <tr>
-          <td>Email</td>
-          <td><?php echo $pemail;?></td>
-        </tr>
-        <tr>
-          <td>First name</td>
-          <td><?php echo $pphone;?></td>
-        </tr>
-        <tr>
-          <td>First name</td>
-          <td><?php echo $pstreet;?></td>
-        </tr>
-        <tr>
-          <td>First name</td>
-          <td><?php echo $pcity;?></td>
-        </tr>
-        <tr>
-          <td>First name</td>
-          <td><?php echo $pstate;?></td>
-        </tr>
-        <tr>
-          <td>First name</td>
-          <td><?php echo $ppostcode;?></td>
-        </tr>
-        <tr>
-          <td>First name</td>
-          <td><?php echo $pproduct;?></td>
-        </tr>
-        <tr>
-          <td>First name</td>
-          <td><?php echo $pduration;?></td>
-        </tr>
-        <tr>
-          <td>First name</td>
-          <td><?php echo $pcomments;?></td>
-        </tr>
-      </table>
-
-    </article>
-
     <aside id='enquiryside'>
         <h3>Still need help? Contact us at: </h3>
         <p>Email: <a href="mailto:Rentone@gmail.com">Rentone@gmail.com</a></p>
         <p>Phone: <a href="tel:+60123456789">0123456789</a></p>
     </aside>
-      <table>
-        <tr>
-          <td>Your name:</td>
+    </article>
 
-        </tr>
-      </table>
 
     <footer>
-        <div class="footer_grid">
-            <div id="footer_item_1">
-                <img src="image/logo.gif" alt="logo" />
-            </div>
-            <div id="footer_item_2">
-                <h2>Rentone</h2>
-                <p>Rentone is a small music renting company that rents high quality instruments for the most reasonable of prices!</p>
-                <p>Rentone has instruments ranging from performance class trumpets to classic guitars, rent an instrument today!</p>
-            </div>
-            <div id='footer_item_3'>
-                <h2>Check out</h2>
-                <p><a href="index.html">Home</a></p>
-                <p><a href="enquiry.html">Enquiry</a></p>
-                <p><a href="aboutus.html">About Us</a></p>
-            </div>
-            <div id='footer_item_4'>
-                <h2>Products</h2>
-                <p><a href="product1.html">Brass</a></p>
-                <p><a href="product2.html">Strings</a></p>
-                <p><a href="product3.html">Woodwind</a></p>
-                <p><a href="product4.html">Percussion</a></p>
-            </div>
-            <div id='footer_item_5'>
-                <h2>Contact us</h2>
-                <p><a href="https://www.facebook.com/RentoneMalaysia/" target='_blank'>Facebook</a></p>
-                <p><a href="mailto:Rentone@gmail.com">Email us</a></p>
-                <p><a href="tel:+60123456789">Phone Us</a></p>
-            </div>
-        </div>
-        <p class="footer_copyright">All rights reserved 2019| &#169; Team Easier To Remember</p>
+        <?php include_once("includes/footer.php");?>
     </footer>
 
     <script src="script/script.js"></script>

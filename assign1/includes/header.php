@@ -26,7 +26,7 @@ function createTable1(){
     $result1 = mysqli_query($conn1, $query1);
     if(!($result1)){
       $que1 = "CREATE TABLE userinfo (
-      userID INT(11) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+      userID INT(11) UNSIGNED AUTO_INCREMENT,
       subject VARCHAR(255) NOT NULL,
       fname VARCHAR(25) NOT NULL,
       lname VARCHAR(25) NOT NULL,
@@ -38,7 +38,8 @@ function createTable1(){
       postcode INT(5) NOT NULL,
       product VARCHAR(255) NOT NULL,
       duration INT(11) NOT NULL,
-      comment TEXT
+      comment TEXT,
+      PRIMARY KEY (userID)
       )";
       
       $res1 = mysqli_query($conn1, $que1);

@@ -12,28 +12,12 @@
 
 <body>
     <header>
-        <div id="logo">
-            <img src="image/logo.gif" alt="logo" /> <!-- https://www.google.com/search?q=music+rental+logo&rlz=1C1GCEJ_enMY842MY842&tbm=isch&source=iu&ictx=1&fir=MbPvCTUvLQPHlM%253A%252ClQdQacHjl7eSOM%252C_&vet=1&usg=AI4_-kQB1eiDk9RWKMmH0FTv45qccPoFwQ&sa=X&ved=2ahUKEwis-sbDl6HhAhXFh3AKHX4rB6QQ9QEwAnoECAkQCA#imgrc=j-82AillGreLPM:&vet=1 -->
-        </div>
+        <?php include_once("includes/header.php");?>
     </header>
     <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li>
-			<div id='navcont'>
-				Products
-                <div id='productlist'>
-
-				</div>
-			</div>
-            </li>
-            <li><a href="enquiry.html">Enquiry</a></li>
-            <li><a href="disclaimer.html">Disclaimer</a></li>
-        </ul>
+        <?php include_once("includes/nav.php");?>
     </nav>
-    <div id="banner2">
-    </div>
-
+    <?php include_once("includes/banner.php");?>
     <section>
         <h2>ENQUIRY</h2>
         <p class="space_bottom">Welcome to the <strong>enquiry page</strong>. This is where you place your booking for renting an instrument.</p>
@@ -45,10 +29,11 @@
         <p class="space_bottom">We respect your privacy and take protecting it seriously.<br />
             All provided informtaion will be used only for the purpose of providing service for our clients.<br />
             For more information, check out our <a href="disclaimer.html">Disclaimer page</a>.</p>
-    </section
+  </section>
 
 
     <?php
+      $subject = $_POST['subject'];
       $firstname=$_POST['fname'];
       $lastname=$_POST['lname'];
       $pemail=$_POST['email'];
@@ -64,7 +49,8 @@
     ?>
 
     <article>
-      <form id="bookform" method="post" action="confirmprocess.php">
+      <form id="bookform" method="post" action="confirmProcess.php">
+        <input type="hidden" name="subject" value="<?php echo $subject; ?>">
         <input type="hidden" name="pfname" value="<?php echo $firstname; ?>">
         <input type="hidden" name="plname" value="<?php echo $lastname; ?>">
         <input type="hidden" name="pemail" value="<?php echo $pemail; ?>">
@@ -78,74 +64,40 @@
         <input type="hidden" name="pcomments" value="<?php echo $pcomments; ?>">
         <fieldset>
           <legend>User Details</legend>
-            <p>First Name: <span id="confirm_fname"></span></p>
-            <p>Last Name: <span id="confirm_lname"></span></p>
-            <p>Email: <span id="confirm_email"></span></p>
-            <p>Phone: <span id="confirm_phone"></span></p>
-            <p>Street: <span id="confirm_street"></span></p>
-            <p>City: <span id="confirm_city"></span></p>
-            <p>State: <span id="confirm_state"></span></p>
-            <p>Postcode: <span id="confirm_postcode"></span></p>
-            <p>Product: <span id="confirm_product"></span></p>
-            <p>Duration: <span id="confirm_duration"></span></p>
-            <p>Comments: <span id="confirm_comment"></span></p>
+            <p>Subject: <span id="confirm_subject"><?php echo $subject; ?></span></p>
+            <p>First Name: <span id="confirm_fname"><?php echo $firstname; ?></span></p>
+            <p>Last Name: <span id="confirm_lname"><?php echo $lastname; ?></span></p>
+            <p>Email: <span id="confirm_email"><?php echo $pemail; ?></span></p>
+            <p>Phone: <span id="confirm_phone"><?php echo $pphone; ?></span></p>
+            <p>Street: <span id="confirm_street"><?php echo $pstreet; ?></span></p>
+            <p>City: <span id="confirm_city"><?php echo $pcity; ?></span></p>
+            <p>State: <span id="confirm_state"><?php echo $pstate; ?></span></p>
+            <p>Postcode: <span id="confirm_postcode"><?php echo $ppostcode; ?></span></p>
+            <p>Product: <span id="confirm_product"><?php echo $pproduct; ?></span></p>
+            <p>Duration: <span id="confirm_duration"><?php echo $pduration; ?></span></p>
+            <p>Comments: <span id="confirm_comment"><?php echo $pcomments; ?></span></p>
 
 
-            <input type="submit" value="Confirm Booking" />
-            <input type="button" value="Cancel" id="cancelButton" onclick="cancelBooking()">
+            <input type="submit" value="Confirm" />
+            <input type="button" value="Cancel" onclick="window.location.href='index.php'" />
         </fieldset>
       </form>
-
-    </article>
 
     <aside id='enquiryside'>
         <h3>Still need help? Contact us at: </h3>
         <p>Email: <a href="mailto:Rentone@gmail.com">Rentone@gmail.com</a></p>
         <p>Phone: <a href="tel:+60123456789">0123456789</a></p>
     </aside>
-      <table>
-        <tr>
-          <td>Your name:</td>
+      
+    </article>
 
-        </tr>
-      </table>
 
-    <footer>
-        <div class="footer_grid">
-            <div id="footer_item_1">
-                <img src="image/logo.gif" alt="logo" />
-            </div>
-            <div id="footer_item_2">
-                <h2>Rentone</h2>
-                <p>Rentone is a small music renting company that rents high quality instruments for the most reasonable of prices!</p>
-                <p>Rentone has instruments ranging from performance class trumpets to classic guitars, rent an instrument today!</p>
-            </div>
-            <div id='footer_item_3'>
-                <h2>Check out</h2>
-                <p><a href="index.html">Home</a></p>
-                <p><a href="enquiry.html">Enquiry</a></p>
-                <p><a href="aboutus.html">About Us</a></p>
-            </div>
-            <div id='footer_item_4'>
-                <h2>Products</h2>
-                <p><a href="product1.html">Brass</a></p>
-                <p><a href="product2.html">Strings</a></p>
-                <p><a href="product3.html">Woodwind</a></p>
-                <p><a href="product4.html">Percussion</a></p>
-            </div>
-            <div id='footer_item_5'>
-                <h2>Contact us</h2>
-                <p><a href="https://www.facebook.com/RentoneMalaysia/" target='_blank'>Facebook</a></p>
-                <p><a href="mailto:Rentone@gmail.com">Email us</a></p>
-                <p><a href="tel:+60123456789">Phone Us</a></p>
-            </div>
-        </div>
-        <p class="footer_copyright">All rights reserved 2019| &#169; Team Easier To Remember</p>
+      <footer>
+        <?php include_once("includes/footer.php");?>
     </footer>
 
     <script src="script/script.js"></script>
     <script src="script/enhancements.js"></script>
-    <script src="script/confirm.js"></script>
 </body>
 
 </html>
