@@ -49,7 +49,7 @@
     ?>
 
     <article>
-      <form id="bookform" method="post" action="confirmProcess.php">
+      <form id="bookform" method="post" action="enquiry_process.php">
         <input type="hidden" name="subject" value="<?php echo $subject; ?>">
         <input type="hidden" name="pfname" value="<?php echo $firstname; ?>">
         <input type="hidden" name="plname" value="<?php echo $lastname; ?>">
