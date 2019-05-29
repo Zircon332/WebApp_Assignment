@@ -157,7 +157,7 @@
       $conn = mysqli_connect($servername, $username, $password, $dbname);
   if($err == ""){
       if($conn){
-        $query = "INSERT INTO userinfo(subject, fname, lname, email, phone, street, city, state, postcode, product, duration, comment)
+        $query = "INSERT INTO enquiry(subject, fname, lname, email, phone, street, city, state, postcode, product, duration, comment)
         VALUES('$subject', '$firstname', '$lastname', '$pemail', '$pphone', '$pstreet', '$pcity', '$pstate', '$ppostcode', '$pproduct', '$pduration', '$pcomments')";
         $result = mysqli_query($conn, $query);
         if($result){
